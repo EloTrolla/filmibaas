@@ -1,10 +1,10 @@
 <?php
 
-//Connect database
+//Connect to database
 $db = mysqli_connect('127.0.0.1', 'root', '', 'filmibaas') or die(mysqli_error($db));
 mysqli_query($db, "SET NAMES 'utf8'");
 
-//Retrieve data from database
+//Retrieve author data from database
 $q = mysqli_query($db, "SELECT *, author.name as name, country.name as country,
                               gender.name as gender
                          FROM author
@@ -12,12 +12,15 @@ $q = mysqli_query($db, "SELECT *, author.name as name, country.name as country,
                           JOIN gender on author.gender_id = gender.gender_id
                          WHERE author_id=1");
 $author = mysqli_fetch_assoc($q);
-print_r($author);
 
-$qrel = mysqli_query($db, "QUERY");
+//Retrieve all relationships for the author from database
+$qrel = mysqli_query($db, "SELECT link_type.name as type, film.name as film
+                            FROM l_author_film
+                            JOIN film ON film.film_id = l_author_film.film_id
+                            JOIN link_type ON link_type.type_id = l_author_film.type_id
+                            WHERE author_id=1");
 while ($row = mysqli_fetch_assoc($qrel)) {
     $relationships[] = $row;
 }
 
-//JOIN l_author_film on author.author_id = l_author_film.author_id
 ?>
