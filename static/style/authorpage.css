@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
+p {
+    font-size: 20px;
+}
+h2 {
+    font-size: 30px;
+}
+.filmipealkiri {
+margin-left: 100px;
+    margin-top: -250px;
+}
+a {
+    font-size: 15px;
+}
+.author {
+    margin-left: 50px;
+}
+img {
+    margin-top: -230px;
+    margin-left: 500px;
+    width: 300px;
+    height: 300px;
+}
+.koik {
+    margin-left: 150px;
+}
+#tutvustus {
+    margin-left: 450px;
+    text-align: center;
+    width: 500px;
+    font-size: 15px;
+
+}
