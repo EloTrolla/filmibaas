@@ -13,15 +13,25 @@
 }
 .para{
     text-align: center;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin: auto;
+    max-width: 150px;
+
+
+}
+
+#search {
+    background-color:#c3dfef;
+
 }
 #tfheader{
-    background-color:#c3dfef;
+    text-align: center;
+
 }
 #tfnewsearch{
     text-align: center;
     padding:20px;
+    display: inline-block;
+
 }
 .tftextinput{
     margin: 0;
@@ -60,8 +70,9 @@
     border: 0;
 }
 .tfclear{
-    clear:both;
+    float: left;
 }
+
 .left {
     padding-bottom: 10px;
     border:solid 1px;
@@ -91,27 +102,30 @@
 .keskmine {
     text-align: center;
     float: right;
-    margin-right: 360px;
+    padding: 10px;
+    width: 70%;
     margin-top: 100px;
+
 }
 .tabel {
-    border:solid 1px;
 
 }
 img {
     width: 100px;
     height: 100px;
+    margin: 10px;
 }
 
 .alumine {
     text-align: center;
-    float: right;
-    margin-right: 510px;
-    margin-top: -20px;
+
+    margin-right: 32%;
+
 
 }
 .dropdown {
-float: right;
-    margin-top: -53px;
-    margin-right: 482px;
+    display:  inline-block;
+    margin: auto;
+
+
 }
