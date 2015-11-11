@@ -1,0 +1,1 @@
+<img src="static/image/footer.jpg">
