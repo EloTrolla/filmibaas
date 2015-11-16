@@ -133,9 +133,13 @@ header {
 
 font-size: 36px;
     text-align: center;
-    height: 250px;
+    height: 130px;
     background-color: #c3dfef;
     clear: both;
+
+}
+header img {
+    height: 180px;
 }
 
 footer {
