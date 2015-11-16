@@ -1,3 +1,4 @@
 <header>
-    <p size="24">FILMIBAAS</p>
+    <img src="static/img/header_logo.png" alt="">
+
 </header>
