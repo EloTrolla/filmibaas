@@ -10,6 +10,8 @@
     <title></title>
 </head>
 <body>
+
+
 <?php include 'static/style/header.php'; ?>
 <h1 class="header_text">FILMIBAAS</h1>
 
