@@ -1,12 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
     <link href="static/style/filmpage.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <title>Film: Name</title>
 </head>
 <body>
-<h1>FILMIBAAS</h1>
+
+<?php include 'static/templates/header.php'; ?>
+
 <div class="koik">
     <div class="film">
         <h2>Viimne reliikvia</h2>
@@ -39,5 +42,8 @@
 
     </div>
 </div>
+
+<?php include 'static/templates/footer.php'; ?>
+
 </body>
 </html>

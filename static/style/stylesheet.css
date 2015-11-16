@@ -129,11 +129,9 @@ img {
 
 }
 
-header {
-
-font-size: 36px;
+.page-header {
+    font-size: 36px;
     text-align: center;
-    height: 100px;
     background-color: #c3dfef;
     clear: both;
 }
@@ -141,7 +139,6 @@ font-size: 36px;
 footer {
     text-align: center;
     clear: both;
-    height: 100px;
+    height: 5%;
     background-color: #c3dfef;
-
 }
