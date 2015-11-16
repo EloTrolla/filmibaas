@@ -13,7 +13,6 @@
 
 
 <?php include 'static/style/header.php'; ?>
-<h1 class="header_text">FILMIBAAS</h1>
 
 <p class="para">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
     quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien

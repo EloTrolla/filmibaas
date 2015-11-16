@@ -131,8 +131,17 @@ img {
 
 header {
 
+font-size: 36px;
+    text-align: center;
+    height: 100px;
+    background-color: #c3dfef;
+    clear: both;
 }
 
 footer {
+    text-align: center;
+    clear: both;
+    height: 100px;
+    background-color: #c3dfef;
 
 }

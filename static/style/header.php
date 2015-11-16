@@ -1,3 +1,3 @@
 <header>
-    <img src="static/image/header.jpg">
+    <p size="24">FILMIBAAS</p>
 </header>

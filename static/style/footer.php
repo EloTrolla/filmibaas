@@ -1,1 +1,3 @@
-<img src="static/image/footer.jpg">
+<footer>
+    <p>Filmiandmebaas 2015</p>
+</footer>
