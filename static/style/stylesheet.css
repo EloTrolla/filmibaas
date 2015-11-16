@@ -7,17 +7,23 @@
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
+
+
 .header {
     text-align: center;
+    font-size: 45px;
 
 }
 .para{
     text-align: center;
     margin-left: 500px;
     margin-right: 500px;
+    color: black;
+
+
 }
 #tfheader{
-    background-color:#c3dfef;
+    background-color:;
 }
 #tfnewsearch{
     text-align: center;
@@ -41,7 +47,7 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    color: #ffffff;
+    color: white;
     border: solid 1px #0076a3; border-right:0px;
     background: #0095cd;
     background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
@@ -64,28 +70,35 @@
 }
 .left {
     padding-bottom: 10px;
-    border:solid 1px;
+
     width:100px;
     text-align: left;
     margin-top: 40px;
 
+    color: black;
+
 }
 .right {
     padding-top: 10px;
-    border:solid 1px;
+
     width:100px;
     text-align: left;
     margin-top: 35px;
+
+    color: black;
 }
 .center {
     padding-top:10px;
-    border:solid 1px;
+
     width:100px;
     text-align: left;
     margin-top: 35px;
+
+    color: black;
 }
 .vasak {
     text-align: left;
+    background-image: url("");
 
 }
 .keskmine {
@@ -93,14 +106,17 @@
     float: right;
     margin-right: 360px;
     margin-top: 100px;
+
 }
 .tabel {
     border:solid 1px;
+
 
 }
 img {
     width: 100px;
     height: 100px;
+    margin: 1px;
 }
 
 .alumine {
@@ -108,10 +124,28 @@ img {
     float: right;
     margin-right: 510px;
     margin-top: -20px;
-
+    color: black;
 }
 .dropdown {
 float: right;
     margin-top: -53px;
     margin-right: 482px;
 }
+
+.boddy {
+
+    background-image: url("http://wallpaperscreenhd.com/wp-content/uploads/2015/07/Underwater-Wallpaper-HD-Desktop.jpg");
+}
+.link1 {
+    color: black;
+}
+.zanr {
+    font-size: large;
+}
+.aasta {
+    font-size: large;
+}
+.riik {
+    font-size: large;
+}
+

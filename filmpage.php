@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="static/style/filmpage.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <title>Filmpage</title>
 </head>
 <body>
 <h1>FILMIBAAS</h1>

@@ -9,10 +9,10 @@
 <head>
     <meta charset="UTF-8">
     <link href="static/style/authorpage.css" rel="stylesheet" type="text/css">
-    <title></title>
+    <title>Authorpage</title>
 </head>
 <body>
-<h1>FILMIBAAS</h1>
+<h1 class="header">FILMIBAAS</h1>
 
 <div class="koik">
     <div class="author">
@@ -44,11 +44,6 @@
 
         <p><a href="">Filmi Pealkiri</a></p>
 
-        <p><a href="">Filmi Pealkiri</a></p>
-
-        <p><a href="">Filmi Pealkiri</a></p>
-
-        <p><a href="">Filmi Pealkiri</a></p>
     </div>
 </div>
 </body>
