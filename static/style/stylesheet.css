@@ -136,16 +136,11 @@ font-size: 36px;
     height: 130px;
     background-color: #c3dfef;
     clear: both;
-
-}
-header img {
-    height: 180px;
 }
 
 footer {
     text-align: center;
     clear: both;
-    height: 100px;
+    height: 5%;
     background-color: #c3dfef;
-
 }

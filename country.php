@@ -1,6 +1,16 @@
 <?php
 require 'controller/country.php';
 ?>
+<?php include 'static/templates/header.php'; ?>
+
+    <!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="static/style/filmpage.css" rel="stylesheet" type="text/css">
+    <title>Country: <?= $data['info']['name'] ?></title>
+</head>
 
 <h1> <?= $data['info']['name'] ?></h1>
 <div class="entity-list">
@@ -22,3 +32,5 @@ require 'controller/country.php';
     }
     ?>
 </div>
+
+<?php include 'static/templates/footer.php'; ?>

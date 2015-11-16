@@ -8,11 +8,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
     <link href="static/style/authorpage.css" rel="stylesheet" type="text/css">
-    <title></title>
+    <title>Author: Name</title>
 </head>
 <body>
-<h1>FILMIBAAS</h1>
+
+<?php include 'static/templates/header.php'; ?>
 
 <div class="koik">
     <div class="author">
@@ -51,5 +53,8 @@
         <p><a href="">Filmi Pealkiri</a></p>
     </div>
 </div>
+
+<?php include 'static/templates/footer.php'; ?>
+
 </body>
 </html>
