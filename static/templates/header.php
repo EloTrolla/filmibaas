@@ -1,3 +1,3 @@
 <header>
-    <p class="page-header">FILMIBAAS</p>
+    <img src="static/img/header_logo.png" alt="">
 </header>
