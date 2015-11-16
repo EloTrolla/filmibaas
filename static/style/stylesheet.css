@@ -7,7 +7,7 @@
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
-.header {
+.header_text {
     text-align: center;
 
 }
@@ -107,13 +107,12 @@
     margin-top: 100px;
 
 }
-.tabel {
-
-}
-img {
+.tabel img {
     width: 100px;
     height: 100px;
     margin: 10px;
+}
+img {
 }
 
 .alumine {
@@ -127,5 +126,22 @@ img {
     display:  inline-block;
     margin: auto;
 
+
+}
+
+header {
+
+font-size: 36px;
+    text-align: center;
+    height: 100px;
+    background-color: #c3dfef;
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    clear: both;
+    height: 100px;
+    background-color: #c3dfef;
 
 }
