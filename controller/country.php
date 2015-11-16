@@ -29,15 +29,3 @@ while ($row = mysqli_fetch_assoc($q)) {
 $data['authors'] = $authors;
 $data['films'] = $films;
 $data['info'] = $country;
-
-if (!empty($data)) {
-    print_r($data);
-}
-
-echo '<h1>'.$data['info']['name'].'</h1>';
-
-foreach ($data['authors'] as $author) {
-    echo 'Name: ' . $author['name'] . ' ('.$author['begin_date_year'].')<br>';
-}
-
-?>
