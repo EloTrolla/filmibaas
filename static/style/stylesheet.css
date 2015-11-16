@@ -129,9 +129,11 @@ img {
 
 }
 
-.page-header {
-    font-size: 36px;
+header {
+
+font-size: 36px;
     text-align: center;
+    height: 130px;
     background-color: #c3dfef;
     clear: both;
 }
