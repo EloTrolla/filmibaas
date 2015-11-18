@@ -9,8 +9,9 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <title>Filmibaas</title>
 </head>
-<body class="boddy">
-<h1 class="header"><img src="static/style/untitled1.png" class="logo"/>FILMIBAAS</h1>
+<body>
+
+<?php include 'static/templates/header.php'; ?>
 
 <p class="para">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
     quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
@@ -22,16 +23,17 @@
             <input type="text" class="tftextinput" name="q" size="21" maxlength="120">
             <input type="submit" value="Otsi" class="tfbutton">
         </form>
+
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Vali
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Aasta</a></li>
+                <li><a href="#">Žanr</a></li>
+                <li><a href="#">Riik</a></li>
+            </ul>
+        </div>
         <div class="tfclear"></div>
-    </div>
-    <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Vali
-            <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-            <li><a href="#">Aasta</a></li>
-            <li><a href="#">Žanr</a></li>
-            <li><a href="#">Riik</a></li>
-        </ul>
     </div>
 </div>
 <div class="keskmine">
@@ -188,5 +190,6 @@
     </div>
 </div>
 
+<?php include 'static/templates/footer.php'; ?>
 </body>
 </html>

@@ -1,5 +1,3 @@
-
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 480px) {
@@ -13,23 +11,42 @@
     text-align: center;
     font-size: 45px;
     margin-right: 90px;
-
 }
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.main-content {
+    padding-bottom: 30px; /* height of footer */
+    padding-left: 3%;
+}
+
 .para{
     text-align: center;
-    margin-left: 500px;
-    margin-right: 500px;
     color: black;
-
-
+    margin: auto;
+    max-width: 150px;
 }
+
 #tfheader{
-    background-color:;
+    background-color:#c3dfef;
+    text-align: center;
 }
+
 #tfnewsearch{
     text-align: center;
     padding:20px;
+    display: inline-block;
 }
+
 .tftextinput{
     margin: 0;
     padding: 5px 15px;
@@ -48,7 +65,7 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     border: solid 1px #0076a3; border-right:0px;
     background: #0095cd;
     background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
@@ -56,65 +73,66 @@
     border-top-right-radius: 5px 5px;
     border-bottom-right-radius: 5px 5px;
 }
+
 .tfbutton:hover {
     text-decoration: none;
     background: #007ead;
     background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
     background: -moz-linear-gradient(top,  #0095cc,  #00678e);
 }
+
 /* Fixes submit button height problem in Firefox */
 .tfbutton::-moz-focus-inner {
     border: 0;
 }
+
 .tfclear{
     clear:both;
 }
+
 .left {
     padding-bottom: 10px;
-
     width:100px;
     text-align: left;
     margin-top: 40px;
-
-    color: black;
+    color: #000000;
 
 }
+
 .right {
     padding-top: 10px;
-
     width:100px;
     text-align: left;
     margin-top: 35px;
-
-    color: black;
+    color: #000000;
 }
+
 .center {
     padding-top:10px;
-
     width:100px;
     text-align: left;
     margin-top: 35px;
-
-    color: black;
+    color: #000000;
 }
+
 .vasak {
     text-align: left;
     background-image: url("");
-
 }
+
 .keskmine {
     text-align: center;
     float: right;
-    margin-right: 360px;
+    padding: 10px;
+    width: 70%;
     margin-top: 100px;
-
 }
+
 .tabel {
     border:solid 1px;
-
-
 }
-img {
+
+.tabel img {
     width: 100px;
     height: 100px;
     margin: 1px;
@@ -123,14 +141,54 @@ img {
 .alumine {
     text-align: center;
     float: right;
-    margin-right: 510px;
+    margin-right: 32%;
     margin-top: -20px;
-    color: black;
+    color: #000000;
 }
+
 .dropdown {
-float: right;
-    margin-top: -53px;
-    margin-right: 482px;
+    display:  inline-block;
+    margin: auto;  
+}
+
+header {
+
+font-size: 36px;
+    text-align: center;
+    height: 130px;
+    background-color: #c3dfef;
+    clear: both;
+}
+
+header img {
+    height: 180px;
+}
+
+footer {
+    text-align: center;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c3dfef;
+}
+
+.author-image,
+.film-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+
+.andmed {
+    font-size: 20px;
+}
+
+.entity-list a {
+    padding-left: 3%;
 }
 
 .boddy {
@@ -152,4 +210,3 @@ float: right;
 .logo {
 
 }
-
