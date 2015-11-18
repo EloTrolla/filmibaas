@@ -30,4 +30,4 @@ while ($row = mysqli_fetch_assoc($q)) {
 
 $data['authors'] = !empty($authors) ? $authors : null;
 $data['films'] = !empty($films) ? $films : null;
-$data['info'] = $country;
+$data['info'] = !empty($country) ? $country : null;
