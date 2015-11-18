@@ -28,6 +28,6 @@ while ($row = mysqli_fetch_assoc($q)) {
 }
 
 
-$data['authors'] = $authors;
-$data['films'] = $films;
+$data['authors'] = !empty($authors) ? $authors : null;
+$data['films'] = !empty($films) ? $films : null;
 $data['info'] = $country;
