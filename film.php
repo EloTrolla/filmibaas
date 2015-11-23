@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <title>Film: Name</title>
 </head>
-<body>
+<body class="entitypage-body">
 
 <div class="wrapper container-fluid">
-<?php include 'static/templates/header.php'; ?>
+    <?php include 'static/templates/header.php'; ?>
     <div class="main-content row">
         <div class="col-md-4">
-        <h2>Viimne reliikvia</h2>
+            <h2>Viimne reliikvia</h2>
 
             <p class="andmed">1969</p>
 

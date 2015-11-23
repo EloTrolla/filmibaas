@@ -6,8 +6,8 @@ require 'controller/country.php';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
     <title><?php echo $data['info'] ? "Country: " . $data['info']['name'] : "Country not found" ?></title>
 </head>
 <body>
@@ -49,6 +49,6 @@ require 'controller/country.php';
             <p>We couldn't find a country with this ID.</p>
         <?php endif ?>
     </div>
-<?php include 'static/templates/footer.php'; ?>
+    <?php include 'static/templates/footer.php'; ?>
 </div>
 </body>

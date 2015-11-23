@@ -5,20 +5,19 @@
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
-
-
-.header {
+/*.header {
     text-align: center;
     font-size: 45px;
     margin-right: 90px;
-}
+}*/
 
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
-    
+}
+
 .wrapper {
     min-height: 100%;
     position: relative;
@@ -37,7 +36,7 @@ body {
 }
 
 #tfheader{
-    background-color:#c3dfef;
+    background-color: #c3dfef;
     text-align: center;
 }
 
@@ -147,13 +146,12 @@ body {
 }
 
 .dropdown {
-    display:  inline-block;
+    display: inline-block;
     margin: auto;  
 }
 
 header {
-
-font-size: 36px;
+    font-size: 36px;
     text-align: center;
     height: 130px;
     background-color: #c3dfef;
@@ -191,10 +189,16 @@ footer {
     padding-left: 3%;
 }
 
-.boddy {
-
+.mainpage-body {
     background-image: url("http://wallpaperscreenhd.com/wp-content/uploads/2015/07/Underwater-Wallpaper-HD-Desktop.jpg");
 }
+
+.entitypage-body {
+    background-image: url("http://1.bp.blogspot.com/-Y28g7-QzJBg/VK4XsiUa_3I/AAAAAAAAAJk/3PE5Sfiwd6c/s1600/the%2Bsecret%2Bto%2Blife.png");
+    background-repeat: no-repeat;
+    background-size: 1400px 710px;
+}
+
 .link1 {
     color: black;
 }
