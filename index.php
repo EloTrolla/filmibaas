@@ -38,6 +38,7 @@
 </div>
 <div class="keskmine">
     <table class="tabel">
+
         <tr>
             <td><a  href="#"><img
                     src="http://resizing.flixster.com/BMR2CNJPTzv4YdkiToeEP1hsKEg=/180x258/dkpu1ddg7pbsk.cloudfront.net/movie/10/93/38/10933866_ori.jpg"></a>
