@@ -30,13 +30,13 @@ body {
 
 .para{
     text-align: center;
-    color: black;
+    color: white;
     margin: auto;
     max-width: 150px;
 }
 
 #tfheader{
-    background-color: #c3dfef;
+    background-image: url("");
     text-align: center;
 }
 
@@ -94,7 +94,7 @@ body {
     width:100px;
     text-align: left;
     margin-top: 40px;
-    color: #000000;
+    color: white;
 
 }
 
@@ -103,7 +103,8 @@ body {
     width:100px;
     text-align: left;
     margin-top: 35px;
-    color: #000000;
+    color: white;
+
 }
 
 .center {
@@ -111,7 +112,7 @@ body {
     width:100px;
     text-align: left;
     margin-top: 35px;
-    color: #000000;
+    color: white;
 }
 
 .vasak {
@@ -154,8 +155,9 @@ header {
     font-size: 36px;
     text-align: center;
     height: 130px;
-    background-color: #c3dfef;
+    background-color: ;
     clear: both;
+
 }
 
 header img {
@@ -170,6 +172,7 @@ footer {
     left: 0;
     width: 100%;
     background-color: #c3dfef;
+    margin: 0px 0px 0px 0px;
 }
 
 .author-image,
@@ -183,18 +186,22 @@ footer {
 
 .andmed {
     font-size: 20px;
+    color: white;
 }
 
 .entity-list a {
     padding-left: 3%;
+    color: grey;
 }
 
 .mainpage-body {
-    background-image: url("http://wallpaperscreenhd.com/wp-content/uploads/2015/07/Underwater-Wallpaper-HD-Desktop.jpg");
+   background-image: url('/filmibaas/static/img/back.jpg');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
 }
 
 .entitypage-body {
-    background-image: url("http://1.bp.blogspot.com/-Y28g7-QzJBg/VK4XsiUa_3I/AAAAAAAAAJk/3PE5Sfiwd6c/s1600/the%2Bsecret%2Bto%2Blife.png");
+    background-image: url("http://d1oi7t5trwfj5d.cloudfront.net/69/ab/84ce57d2474bb8091f8d9912c614/movie-theater.jpg");
     background-repeat: no-repeat;
     background-size: 1400px 710px;
 }
@@ -204,13 +211,31 @@ footer {
 }
 .zanr {
     font-size: large;
+    color: white;
 }
 .aasta {
     font-size: large;
+    color: white;
 }
 .riik {
     font-size: large;
+    color: white;
 }
-.logo {
 
+.col-md-4 {
+    color: white;
 }
+#tutvustus {
+    color: white;
+}
+p {
+    color: white;
+}
+.link1 {
+    color: white;
+}
+.foot {
+    color: black;
+}
+html {
+    overflow-x: hidden; }

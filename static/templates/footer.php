@@ -1,3 +1,3 @@
 <footer>
-    <p>Filmiandmebaas 2015</p>
+    <p class="foot">Filmiandmebaas 2015</p>
 </footer>

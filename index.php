@@ -189,7 +189,6 @@
         <p><strong>Meil on nii palju filme ja nii palju näitlejaid jne!</strong></p>
     </div>
 </div>
-
 <?php include 'static/templates/footer.php'; ?>
 </body>
 </html>
