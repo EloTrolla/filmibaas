@@ -70,3 +70,4 @@ INSERT INTO genre VALUES (1, 'Adventure');
 INSERT INTO link_type VALUES (1, 'Director');
 INSERT INTO l_author_film VALUES (1, 1, 1, 1);
 INSERT INTO l_film_genre VALUES (1, 1, 1);
+

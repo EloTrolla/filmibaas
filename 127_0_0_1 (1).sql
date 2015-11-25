@@ -101,7 +101,7 @@ INSERT INTO `country` (`country_id`, `iso`, `name`) VALUES
 -- Creation: Nov 05, 2015 at 06:57 AM
 --
 
-CREATE TABLE IF NOT EXISTS `film` (
+CREATE TABLE IF NOT EXISTS film (
   `film_id` bigint(20) unsigned NOT NULL,
   `name` varchar(255) NOT NULL,
   `year` smallint(6) DEFAULT NULL,

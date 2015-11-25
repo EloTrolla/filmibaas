@@ -11,7 +11,6 @@ $q = mysqli_query($db, "SELECT *, film.name as name, country.name as country
                          WHERE film_id=$film_id");
 $film = mysqli_fetch_assoc($q);
 
-print_r($film);
 
 //Retrieve all relationships for the film from database
 $qrel = mysqli_query($db, "SELECT link_type.name as type, author.name as author
