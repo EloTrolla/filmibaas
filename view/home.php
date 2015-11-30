@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="../static/style/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -13,7 +13,7 @@
 
 <?php include 'static/templates/header.php'; ?>
 
-<p class="para">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+<p class="para">Vestibulum tortor quamm feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
     quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
     ullamcorper pharetra.</p>
 
