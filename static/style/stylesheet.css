@@ -5,20 +5,19 @@
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
-
-
-.header {
+/*.header {
     text-align: center;
     font-size: 45px;
     margin-right: 90px;
-}
+}*/
 
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
-    
+}
+
 .wrapper {
     min-height: 100%;
     position: relative;
@@ -31,13 +30,13 @@ body {
 
 .para{
     text-align: center;
-    color: black;
+    color: white;
     margin: auto;
     max-width: 150px;
 }
 
 #tfheader{
-    background-color:#c3dfef;
+    background-image: url("");
     text-align: center;
 }
 
@@ -95,7 +94,7 @@ body {
     width:100px;
     text-align: left;
     margin-top: 40px;
-    color: #000000;
+    color: white;
 
 }
 
@@ -104,7 +103,8 @@ body {
     width:100px;
     text-align: left;
     margin-top: 35px;
-    color: #000000;
+    color: white;
+
 }
 
 .center {
@@ -112,7 +112,7 @@ body {
     width:100px;
     text-align: left;
     margin-top: 35px;
-    color: #000000;
+    color: white;
 }
 
 .vasak {
@@ -147,17 +147,17 @@ body {
 }
 
 .dropdown {
-    display:  inline-block;
+    display: inline-block;
     margin: auto;  
 }
 
 header {
-
-font-size: 36px;
+    font-size: 36px;
     text-align: center;
     height: 130px;
-    background-color: #c3dfef;
+    background-color: ;
     clear: both;
+
 }
 
 header img {
@@ -172,6 +172,7 @@ footer {
     left: 0;
     width: 100%;
     background-color: #c3dfef;
+    margin: 0px 0px 0px 0px;
 }
 
 .author-image,
@@ -185,28 +186,57 @@ footer {
 
 .andmed {
     font-size: 20px;
+    color: white;
 }
 
 .entity-list a {
     padding-left: 3%;
+    color: grey;
 }
 
-.boddy {
-
-    background-image: url("http://wallpaperscreenhd.com/wp-content/uploads/2015/07/Underwater-Wallpaper-HD-Desktop.jpg");
+.mainpage-body {
+   background-image: url('/filmibaas/static/img/back.jpg');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
 }
+
+.entitypage-body {
+    background-image: url("http://d1oi7t5trwfj5d.cloudfront.net/69/ab/84ce57d2474bb8091f8d9912c614/movie-theater.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400px 710px;
+}
+
 .link1 {
     color: black;
 }
 .zanr {
     font-size: large;
+    color: white;
 }
 .aasta {
     font-size: large;
+    color: white;
 }
 .riik {
     font-size: large;
+    color: white;
 }
-.logo {
 
+.col-md-4 {
+    color: white;
+}
+#tutvustus {
+    color: white;
+}
+p {
+    color: white;
+}
+.link1 {
+    color: white;
+}
+.foot {
+    color: black;
+}
+html {
+    overflow-x: hidden;
 }

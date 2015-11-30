@@ -9,7 +9,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <title>Filmibaas</title>
 </head>
-<body>
+<body class="mainpage-body">
 
 <?php include 'static/templates/header.php'; ?>
 
@@ -190,7 +190,6 @@
         <p><strong>Meil on nii palju filme ja nii palju näitlejaid jne!</strong></p>
     </div>
 </div>
-
 <?php include 'static/templates/footer.php'; ?>
 </body>
 </html>

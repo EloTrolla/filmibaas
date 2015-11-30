@@ -1,22 +1,27 @@
+<?php
+require 'controller/film.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <title>Film: Name</title>
+    <title>Film: <?php echo $film['name']; ?></title>
 </head>
-<body>
+<body class="entitypage-body">
 
 <div class="wrapper container-fluid">
-<?php include 'static/templates/header.php'; ?>
+    <?php include 'static/templates/header.php'; ?>
     <div class="main-content row">
         <div class="col-md-4">
-        <h2>Viimne reliikvia</h2>
+            <h2><?= $film['name']; ?></h2>
 
-            <p class="andmed">1969</p>
+            <p class="andmed"><?= $film['year']; ?></p>
 
-            <p class="andmed">ENSVL</p>
+            <p class="andmed"><?= $film['country']; ?></p>
 
             <div class="entity-list">
                 <h3>Osalejad</h3>
