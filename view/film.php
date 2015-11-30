@@ -6,7 +6,7 @@ require 'controller/film.php';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="../static/style/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <title>Film: <?php echo $film['name']; ?></title>
