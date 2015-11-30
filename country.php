@@ -18,7 +18,7 @@ require 'controller/country.php';
             <h1><?= $data['info']['name'] ?></h1>
 
             <div class="entity-list col-md-6">
-                <h2>Authors</h2>
+                <h2>Autorid</h2>
                 <?php
                 if ($data['authors']) {
                     foreach ($data['authors'] as $author) {
@@ -32,7 +32,7 @@ require 'controller/country.php';
             </div>
 
             <div class="entity-list col-md-6">
-                <h2>Films</h2>
+                <h2>Filmid</h2>
                 <?php
                 if ($data['films']) {
                     foreach ($data['films'] as $film) {

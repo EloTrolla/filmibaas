@@ -31,6 +31,8 @@
                 <li><a href="#">Aasta</a></li>
                 <li><a href="#">Žanr</a></li>
                 <li><a href="#">Riik</a></li>
+                <li><a href="#">Autor</a></li>
+                <li><a href="#">Film</a></li>
             </ul>
         </div>
         <div class="tfclear"></div>
