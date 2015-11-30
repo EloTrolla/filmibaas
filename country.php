@@ -8,7 +8,7 @@ require 'controller/country.php';
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
-    <title><?php echo $data['info'] ? "Country: " . $data['info']['name'] : "Country not found" ?></title>
+    <title><?php echo $data['info'] ? "Country: " . $data['info']['name'] : "Riiki ei leitud" ?></title>
 </head>
 <body>
 <div class="wrapper container-fluid">
@@ -45,8 +45,8 @@ require 'controller/country.php';
                 ?>
             </div>
         <?php else: ?>
-            <h1>Nothing found</h1>
-            <p>We couldn't find a country with this ID.</p>
+            <h1>Riiki ei leitud</h1>
+            <p>Sellise ID-ga riiki ei ole meil olemas.</p>
         <?php endif ?>
     </div>
     <?php include 'static/templates/footer.php'; ?>

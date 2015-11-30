@@ -21,8 +21,15 @@ error_reporting(E_ALL);
 <div class="wrapper container-fluid">
     <?php include 'static/templates/header.php'; ?>
     <div class="main-content row">
+
         <div class="col-md-4">
+            <?php if(isset($_GET['id']) && $_GET['id'] > 3) {
+                echo 'Autorit ei leitud';
+                return false;
+            } ?>
+
             <h2><?= $author['name']; ?></h2>
+
 
             <p class="andmed"><?= $author['begin_date_year']; ?>/<?= $author['begin_date_month']; ?>/<?= $author['begin_date_day']; ?> - <?= $author['end_date_year']; ?>/<?= $author['end_date_month']; ?>/<?= $author['end_date_day']; ?></p>
 
@@ -31,6 +38,7 @@ error_reporting(E_ALL);
             <p class="andmed">Riik: <?= $author['country']; ?></p>
 
             <div class="entity-list">
+
                 <h2>Filmograafia</h2>
 
                 <p><a href="">Filmi Pealkiri</a></p>
