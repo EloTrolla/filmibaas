@@ -17,25 +17,6 @@
     quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
     ullamcorper pharetra.</p>
 
-<div id="search">
-    <div id="tfheader">
-        <form id="tfnewsearch" method="get" action="http://www.google.com">
-            <input type="text" class="tftextinput" name="q" size="21" maxlength="120">
-            <input type="submit" value="Otsi" class="tfbutton">
-        </form>
-
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Vali
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Aasta</a></li>
-                <li><a href="#">Žanr</a></li>
-                <li><a href="#">Riik</a></li>
-            </ul>
-        </div>
-        <div class="tfclear"></div>
-    </div>
-</div>
 <div class="keskmine">
     <table class="tabel">
 
