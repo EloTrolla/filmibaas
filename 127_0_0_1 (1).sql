@@ -212,6 +212,7 @@ CREATE TABLE IF NOT EXISTS `l_author_film` (
 -- Dumping data for table `l_author_film`
 --
 
+
 INSERT INTO `l_author_film` (`id`, `author_id`, `film_id`, `type_id`) VALUES
 (1, 1, 1, 1);
 

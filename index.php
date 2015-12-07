@@ -1,3 +1,6 @@
+<?php
+    require 'controller/film.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +10,25 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <title>Filmibaas</title>
 </head>
 <body class="mainpage-body">
+
+<p>
+    <input class="" type="search"
+<button>search</button>
+movie id= $this = params
+this movie
+    if($this->controller
+
+(controller)
+
+<script>
+window.location.href = ""
+
+
+</script>
 
 <?php include 'static/templates/header.php'; ?>
 
@@ -19,7 +38,7 @@
 
 <div id="search">
     <div id="tfheader">
-        <form id="tfnewsearch" method="get" action="http://www.google.com">
+        <form id="tfnewsearch" method="get" action="<?=$PHP_SELF?>">
             <input type="text" class="tftextinput" name="q" size="21" maxlength="120">
             <input type="submit" value="Otsi" class="tfbutton">
         </form>

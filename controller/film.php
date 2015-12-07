@@ -22,6 +22,7 @@ while ($row = mysqli_fetch_assoc($qrel)) {
     $relationships[] = $row;
 }
 
+
 //Retrieve all genres for the film from database
 $qgen = mysqli_query($db, "SELECT genre.name as genre
                             FROM l_film_genre
@@ -32,4 +33,7 @@ while ($row = mysqli_fetch_assoc($qgen)) {
     $genres[] = $row;
 }
 
-?>
+
+
+
+
