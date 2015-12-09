@@ -35,4 +35,3 @@ old code
     <li><a value="riik">Riik</a></li>
 </ul>
 --->
-*/

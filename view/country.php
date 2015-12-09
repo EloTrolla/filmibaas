@@ -8,17 +8,22 @@ require 'controller/country.php';
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
-    <title><?php echo $data['info'] ? "Country: " . $data['info']['name'] : "Country not found" ?></title>
+    <title><?php echo $data['info'] ? "Country: " . $data['info']['name'] : "Riiki ei leitud" ?></title>
 </head>
 <body>
+<?php if(isset($_GET['id']) && $_GET['id'] > 10) {
+    echo 'Riiki ei leitud';
+    return false;
+} ?>
+<?php include 'static/templates/header.php'; ?>
 <div class="wrapper container-fluid">
-    <?php include 'static/templates/header.php'; ?>
+
     <div class="main-content row">
         <?php if ($data['info']): ?>
             <h1><?= $data['info']['name'] ?></h1>
 
             <div class="entity-list col-md-6">
-                <h2>Authors</h2>
+                <h2>Autorid</h2>
                 <?php
                 if ($data['authors']) {
                     foreach ($data['authors'] as $author) {
@@ -32,7 +37,7 @@ require 'controller/country.php';
             </div>
 
             <div class="entity-list col-md-6">
-                <h2>Films</h2>
+                <h2>Filmid</h2>
                 <?php
                 if ($data['films']) {
                     foreach ($data['films'] as $film) {
@@ -45,11 +50,12 @@ require 'controller/country.php';
                 ?>
             </div>
         <?php else: ?>
-            <h1>Nothing found</h1>
-            <p>We couldn't find a country with this ID.</p>
+            <h1>Riiki ei leitud</h1>
+            <p>Sellise ID-ga riiki ei ole meil olemas.</p>
         <?php endif ?>
 
     </div>
-    <?php include 'static/templates/footer.php'; ?>
+
 </div>
+<?php include 'static/templates/footer.php'; ?>
 </body>

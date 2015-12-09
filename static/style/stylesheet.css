@@ -242,3 +242,8 @@ html {
     overflow-x: hidden;
 }
 
+.osta {
+    float:right;
+    margin-right: 60px;
+}
+
