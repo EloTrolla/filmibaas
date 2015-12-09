@@ -11,6 +11,10 @@ require 'controller/country.php';
     <title><?php echo $data['info'] ? "Country: " . $data['info']['name'] : "Country not found" ?></title>
 </head>
 <body>
+<?php if(isset($_GET['id']) && $_GET['id'] > 10) {
+    echo 'Riiki ei leitud';
+    return false;
+} ?>
 <div class="wrapper container-fluid">
     <?php include 'static/templates/header.php'; ?>
     <div class="main-content row">

@@ -16,6 +16,10 @@ error_reporting(E_ALL);
 
     <title>Autor: <?php echo $author['name']; ?></title>
 </head>
+<?php if (isset($_GET['id']) && $_GET['id'] > 3) {
+    echo 'Autorit ei leitud';
+    return false;
+} ?>
 <body class="entitypage-body">
 
 <div class="wrapper container-fluid">
