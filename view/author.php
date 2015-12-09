@@ -21,9 +21,10 @@ error_reporting(E_ALL);
     return false;
 } ?>
 <body class="entitypage-body">
+<?php include 'static/templates/header.php'; ?>
 
 <div class="wrapper container-fluid">
-    <?php include 'static/templates/header.php'; ?>
+
     <div class="main-content row">
         <div class="col-md-4">
             <h2><?= $author['name']; ?></h2>
@@ -72,9 +73,7 @@ error_reporting(E_ALL);
             </p>
         </div>
     </div>
-
-
-    <?php include 'static/templates/footer.php'; ?>
 </div>
+<?php include 'static/templates/footer.php'; ?>
 </body>
 </html>

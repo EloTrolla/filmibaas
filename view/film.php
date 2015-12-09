@@ -16,9 +16,9 @@ require 'controller/film.php';
     return false;
 } ?>
 <body class="entitypage-body">
-
+<?php include 'static/templates/header.php'; ?>
 <div class="wrapper container-fluid">
-    <?php include 'static/templates/header.php'; ?>
+
     <div class="main-content row">
         <div class="col-md-4">
             <h2><?= $film['name']; ?></h2>
@@ -61,9 +61,11 @@ require 'controller/film.php';
                 nisi bibendum, sollicitudin urna euismod, sagittis neque.
             </p>
         </div>
-
+        <form>
+            <input class='osta' type="button" value="Osta!" onclick="window.location.href='http://www.google.com'" />
+        </form>
     </div>
-    <?php include 'static/templates/footer.php'; ?>
 </div>
+<?php include 'static/templates/footer.php'; ?>
 </body>
 </html>

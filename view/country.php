@@ -15,8 +15,9 @@ require 'controller/country.php';
     echo 'Riiki ei leitud';
     return false;
 } ?>
+<?php include 'static/templates/header.php'; ?>
 <div class="wrapper container-fluid">
-    <?php include 'static/templates/header.php'; ?>
+
     <div class="main-content row">
         <?php if ($data['info']): ?>
             <h1><?= $data['info']['name'] ?></h1>
@@ -54,6 +55,7 @@ require 'controller/country.php';
         <?php endif ?>
 
     </div>
-    <?php include 'static/templates/footer.php'; ?>
+
 </div>
+<?php include 'static/templates/footer.php'; ?>
 </body>
