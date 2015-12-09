@@ -1,70 +1,376 @@
-<!DOCTYPE HTML><html lang='en' dir='ltr' class='chrome chrome46'><head><meta charset="utf-8" /><meta name="robots" content="noindex,nofollow" /><meta http-equiv="X-UA-Compatible" content="IE=Edge"><style id="cfs-style">html{display: none;}</style><link rel="icon" href="favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /><link rel="stylesheet" type="text/css" href="./themes/pmahomme/jquery/jquery-ui-1.11.2.css" /><link rel="stylesheet" type="text/css" href="phpmyadmin.css.php?nocache=5735483461ltr" /><title>localhost / 127.0.0.1 | phpMyAdmin 4.4.14</title><script data-cfasync='false' type='text/javascript' src='js/whitelist.php?lang=en&amp;db=&amp;token=3620e8c6b58add055e1d564d96e39bf1'></script><script data-cfasync="false" type="text/javascript" src="js/get_scripts.js.php?scripts%5B%5D=jquery/jquery-1.11.1.min.js&amp;scripts%5B%5D=sprintf.js&amp;scripts%5B%5D=ajax.js&amp;scripts%5B%5D=keyhandler.js&amp;scripts%5B%5D=jquery/jquery-ui-1.11.2.min.js&amp;scripts%5B%5D=jquery/jquery.cookie.js&amp;scripts%5B%5D=jquery/jquery.mousewheel.js&amp;scripts%5B%5D=jquery/jquery.event.drag-2.2.js&amp;scripts%5B%5D=jquery/jquery-ui-timepicker-addon.js&amp;scripts%5B%5D=jquery/jquery.ba-hashchange-1.3.js&amp;scripts%5B%5D=jquery/jquery.debounce-1.0.5.js&amp;scripts%5B%5D=menu-resizer.js&amp;scripts%5B%5D=cross_framing_protection.js&amp;scripts%5B%5D=rte.js&amp;scripts%5B%5D=tracekit/tracekit.js&amp;scripts%5B%5D=error_report.js&amp;scripts%5B%5D=doclinks.js&amp;scripts%5B%5D=functions.js&amp;scripts%5B%5D=navigation.js&amp;scripts%5B%5D=indexes.js&amp;scripts%5B%5D=common.js&amp;scripts%5B%5D=codemirror/lib/codemirror.js&amp;scripts%5B%5D=codemirror/mode/sql/sql.js&amp;scripts%5B%5D=codemirror/addon/runmode/runmode.js&amp;scripts%5B%5D=codemirror/addon/hint/show-hint.js&amp;scripts%5B%5D=codemirror/addon/hint/sql-hint.js&amp;scripts%5B%5D=console.js"></script><script data-cfasync='false' type='text/javascript' src='js/messages.php?lang=en&amp;db=&amp;token=3620e8c6b58add055e1d564d96e39bf1'></script><script data-cfasync='false' type='text/javascript' src='js/get_image.js.php?theme=pmahomme'></script><script data-cfasync="false" type="text/javascript">// <![CDATA[
-PMA_commonParams.setAll({common_query:"?token=3620e8c6b58add055e1d564d96e39bf1",opendb_url:"db_structure.php",safari_browser:"0",collation_connection:"utf8mb4_unicode_ci",lang:"en",server:"1",table:"",db:"",token:"3620e8c6b58add055e1d564d96e39bf1",text_dir:"ltr",show_databases_navigation_as_tree:"1",pma_absolute_uri:"http://localhost/phpmyadmin/",pma_text_default_tab:"Browse",pma_text_left_default_tab:"Structure",pma_text_left_default_tab2:"",LimitChars:"50",pftext:"P",confirm:"1",LoginCookieValidity:"1440",logged_in:"1",auth_type:"config"});
-AJAX.scriptHandler.add("jquery/jquery-1.11.1.min.js",0).add("whitelist.php?lang=en&amp;db=&amp;token=3620e8c6b58add055e1d564d96e39bf1",1).add("sprintf.js",1).add("ajax.js",0).add("keyhandler.js",1).add("jquery/jquery-ui-1.11.2.min.js",0).add("jquery/jquery.cookie.js",0).add("jquery/jquery.mousewheel.js",0).add("jquery/jquery.event.drag-2.2.js",0).add("jquery/jquery-ui-timepicker-addon.js",0).add("jquery/jquery.ba-hashchange-1.3.js",0).add("jquery/jquery.debounce-1.0.5.js",0).add("menu-resizer.js",1).add("cross_framing_protection.js",0).add("rte.js",1).add("tracekit/tracekit.js",1).add("error_report.js",1).add("messages.php?lang=en&amp;db=&amp;token=3620e8c6b58add055e1d564d96e39bf1",0).add("get_image.js.php?theme=pmahomme",0).add("doclinks.js",1).add("functions.js",1).add("navigation.js",0).add("indexes.js",1).add("common.js",1).add("codemirror/lib/codemirror.js",0).add("codemirror/mode/sql/sql.js",0).add("codemirror/addon/runmode/runmode.js",0).add("codemirror/addon/hint/show-hint.js",0).add("codemirror/addon/hint/sql-hint.js",0).add("console.js",1);
-$(function() {AJAX.fireOnload("whitelist.php?lang=en&amp;db=&amp;token=3620e8c6b58add055e1d564d96e39bf1");AJAX.fireOnload("sprintf.js");AJAX.fireOnload("keyhandler.js");AJAX.fireOnload("menu-resizer.js");AJAX.fireOnload("rte.js");AJAX.fireOnload("tracekit/tracekit.js");AJAX.fireOnload("error_report.js");AJAX.fireOnload("doclinks.js");AJAX.fireOnload("functions.js");AJAX.fireOnload("indexes.js");AJAX.fireOnload("common.js");AJAX.fireOnload("console.js");});
-// ]]></script><noscript><style>html{display:block}</style></noscript></head><body><div id="pma_navigation"><div id="pma_navigation_resizer"></div><div id="pma_navigation_collapser"></div><div id="pma_navigation_content"><div id="pma_navigation_header"><a class="hide navigation_url" href="navigation.php?ajax_request=1&amp;token=3620e8c6b58add055e1d564d96e39bf1"></a><!-- LOGO START --><div id="pmalogo">    <a href="index.php?token=3620e8c6b58add055e1d564d96e39bf1"><img src="./themes/pmahomme/img/logo_left.png" alt="phpMyAdmin" id="imgpmalogo" /></a></div><!-- LOGO END --><!-- LINKS START --><div id="navipanellinks"><a href="index.php?token=3620e8c6b58add055e1d564d96e39bf1" title="Home"><img src="themes/dot.gif" title="Home" alt="Home" class="icon ic_b_home" /></a><a href="./doc/html/index.html" target="documentation" title="phpMyAdmin documentation"><img src="themes/dot.gif" title="phpMyAdmin documentation" alt="phpMyAdmin documentation" class="icon ic_b_docs" /></a><a href="./url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.6%2Fen%2Findex.html" target="mysql_doc" title="Documentation"><img src="themes/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_sqlhelp" /></a><a href="#" id="pma_navigation_reload" title="Reload navigation panel"><img src="themes/dot.gif" title="Reload navigation panel" alt="Reload navigation panel" class="icon ic_s_reload" /></a></div><!-- LINKS ENDS --><img src="./themes/pmahomme/img/ajax_clock_small.gif" title="Loading…" alt="Loading…" style="visibility: hidden; display:none" class="throbber" /></div><div id="pma_navigation_tree" class="list_container synced highlight"><div class="pma_quick_warp"><div class="drop_list"><span title="Recent tables" class="drop_button">Recent</span><ul id="pma_recent_list"><li class="warp_link"><a href="tbl_recent_favorite.php?db=filmibaas&amp;table=products&amp;token=3620e8c6b58add055e1d564d96e39bf1">`filmibaas`.`products`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=filmibaas&amp;table=author&amp;token=3620e8c6b58add055e1d564d96e39bf1">`filmibaas`.`author`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=phpmyadmin&amp;table=pma_column_info&amp;token=3620e8c6b58add055e1d564d96e39bf1">`phpmyadmin`.`pma_column_info`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=phpmyadmin&amp;table=pma_designer_coords&amp;token=3620e8c6b58add055e1d564d96e39bf1">`phpmyadmin`.`pma_designer_coords`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=phpmyadmin&amp;table=pma_history&amp;token=3620e8c6b58add055e1d564d96e39bf1">`phpmyadmin`.`pma_history`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=phpmyadmin&amp;table=pma_pdf_pages&amp;token=3620e8c6b58add055e1d564d96e39bf1">`phpmyadmin`.`pma_pdf_pages`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=phpmyadmin&amp;table=pma_recent&amp;token=3620e8c6b58add055e1d564d96e39bf1">`phpmyadmin`.`pma_recent`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=phpmyadmin&amp;table=pma_relation&amp;token=3620e8c6b58add055e1d564d96e39bf1">`phpmyadmin`.`pma_relation`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=cdcol&amp;table=cds&amp;token=3620e8c6b58add055e1d564d96e39bf1">`cdcol`.`cds`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=mysql&amp;table=user&amp;token=3620e8c6b58add055e1d564d96e39bf1">`mysql`.`user`</a></li></ul></div><div class="drop_list"><span title="Favorite tables" class="drop_button">Favorites</span><ul id="pma_favorite_list"><li class="warp_link">There are no favorite tables.</li></ul></div><div class="clearfloat"></div></div><div class="clearfloat"></div><ul><!-- CONTROLS START --><li id="navigation_controls_outer"><div id="navigation_controls"><a href="#" id="pma_navigation_collapse" title="Collapse all"><img src="./themes/pmahomme/img/s_collapseall.png" title="Collapse all" alt="Collapse all" /></a><a href="#" id="pma_navigation_sync" title="Unlink from main panel"><img src="themes/dot.gif" title="Unlink from main panel" alt="Unlink from main panel" class="icon ic_s_link" /></a></div></li><!-- CONTROLS ENDS --></ul><div id='pma_navigation_tree_content'><ul><li class="first new_database italics"><div class='block'><i class='first'></i></div><div class='block '><a href='server_databases.php?server=1&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="" alt="" class="icon ic_b_newdb" /></a></div><a class='hover_show_full' href='server_databases.php?server=1&amp;token=3620e8c6b58add055e1d564d96e39bf1' title=''>New</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.Y2Rjb2w=</span><span class='hide vPath'>cm9vdA==.Y2Rjb2w=</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=cdcol&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=cdcol&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>cdcol</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.Y2xlYW5ibG9n</span><span class='hide vPath'>cm9vdA==.Y2xlYW5ibG9n</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=cleanblog&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=cleanblog&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>cleanblog</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.ZXBhbms=</span><span class='hide vPath'>cm9vdA==.ZXBhbms=</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=epank&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=epank&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>epank</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.ZmlsbWliYWFz</span><span class='hide vPath'>cm9vdA==.ZmlsbWliYWFz</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=filmibaas&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=filmibaas&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>filmibaas</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.aGVubm9hbmRtZWJhYXM=</span><span class='hide vPath'>cm9vdA==.aGVubm9hbmRtZWJhYXM=</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=hennoandmebaas&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=hennoandmebaas&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>hennoandmebaas</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class='hide vPath'>cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=information_schema&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=information_schema&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>information_schema</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.bXlzcWw=</span><span class='hide vPath'>cm9vdA==.bXlzcWw=</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=mysql&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=mysql&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>mysql</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class='hide vPath'>cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=performance_schema&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=performance_schema&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>performance_schema</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.cGhwbXlhZG1pbg==</span><span class='hide vPath'>cm9vdA==.cGhwbXlhZG1pbg==</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=phpmyadmin&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=phpmyadmin&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>phpmyadmin</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.dGVzdA==</span><span class='hide vPath'>cm9vdA==.dGVzdA==</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=tests&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=tests&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>tests</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.dGVzdGxpbms=</span><span class='hide vPath'>cm9vdA==.dGVzdGxpbms=</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=testlink&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=testlink&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>testlink</a><div class="clearfloat"></div></li><li class="last database"><div class='block'><i></i><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.d2ViYXV0aA==</span><span class='hide vPath'>cm9vdA==.d2ViYXV0aA==</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=webauth&amp;token=3620e8c6b58add055e1d564d96e39bf1'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=webauth&amp;token=3620e8c6b58add055e1d564d96e39bf1' title='Structure'>webauth</a><div class="clearfloat"></div></li></ul></div></div></div><div class="pma_drop_handler">Drop files here</div><div class="pma_sql_import_status"><h2>SQL upload ( <span class="pma_import_count">0</span> ) <span class="close">x</span><span class="minimize">-</span></h2><div></div></div></div><noscript><div class="error"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_error" /> Javascript must be enabled past this point!</div></noscript><div id='floating_menubar'></div><div id='serverinfo'><img src="themes/dot.gif" title="" alt="" class="icon ic_s_host item" /><a href="index.php?token=3620e8c6b58add055e1d564d96e39bf1" class="item">Server: 127.0.0.1</a><div class="clearfloat"></div></div><div id="topmenucontainer" class="menucontainer"><ul id="topmenu"  class="resizable-menu"><li><a class="tab" href="server_databases.php?db=&amp;token=3620e8c6b58add055e1d564d96e39bf1" ><img src="themes/dot.gif" title="Databases" alt="Databases" class="icon ic_s_db" /> Databases</a></li><li><a class="tab" href="server_sql.php?db=&amp;token=3620e8c6b58add055e1d564d96e39bf1" ><img src="themes/dot.gif" title="SQL" alt="SQL" class="icon ic_b_sql" /> SQL</a></li><li><a class="tab" href="server_status.php?db=&amp;token=3620e8c6b58add055e1d564d96e39bf1" ><img src="themes/dot.gif" title="Status" alt="Status" class="icon ic_s_status" /> Status</a></li><li><a class="tab" href="server_privileges.php?db=&amp;token=3620e8c6b58add055e1d564d96e39bf1&amp;viewing_mode=server" ><img src="themes/dot.gif" title="Users" alt="Users" class="icon ic_s_rights" /> Users</a></li><li><a class="tab" href="server_export.php?db=&amp;token=3620e8c6b58add055e1d564d96e39bf1" ><img src="themes/dot.gif" title="Export" alt="Export" class="icon ic_b_export" /> Export</a></li><li><a class="tab" href="server_import.php?db=&amp;token=3620e8c6b58add055e1d564d96e39bf1" ><img src="themes/dot.gif" title="Import" alt="Import" class="icon ic_b_import" /> Import</a></li><li><a class="tab" href="prefs_manage.php?db=&amp;token=3620e8c6b58add055e1d564d96e39bf1" ><img src="themes/dot.gif" title="Settings" alt="Settings" class="icon ic_b_tblops" /> Settings</a></li><li><a class="tab" href="server_replication.php?db=&amp;token=3620e8c6b58add055e1d564d96e39bf1" ><img src="themes/dot.gif" title="Replication" alt="Replication" class="icon ic_s_replication" /> Replication</a></li><li><a class="tab" href="server_variables.php?db=&amp;token=3620e8c6b58add055e1d564d96e39bf1" ><img src="themes/dot.gif" title="Variables" alt="Variables" class="icon ic_s_vars" /> Variables</a></li><li><a class="tab" href="server_collations.php?db=&amp;token=3620e8c6b58add055e1d564d96e39bf1" ><img src="themes/dot.gif" title="Charsets" alt="Charsets" class="icon ic_s_asci" /> Charsets</a></li><li><a class="tab" href="server_engines.php?db=&amp;token=3620e8c6b58add055e1d564d96e39bf1" ><img src="themes/dot.gif" title="Engines" alt="Engines" class="icon ic_b_engine" /> Engines</a></li><div class="clearfloat"></div></ul>
-</div>
-<span id="lock_page_icon"></span><a id="goto_pagetop" href="#"><img src="themes/dot.gif" title="Click on the bar to scroll to top of page" alt="Click on the bar to scroll to top of page" class="icon ic_s_top" /></a><div id="pma_console_container"><div id="pma_console"><div class="toolbar collapsed"><div class="switch_button console_switch"><img src="themes/dot.gif" title="SQL Query Console" alt="SQL Query Console" class="icon ic_console" /><span>Console</span></div><div class="button clear"><span>Clear</span></div><div class="button history"><span>History</span></div><div class="button options"><span>Options</span></div><div class="button bookmarks"><span>Bookmarks</span></div></div><div class="content"><div class="console_message_container"><div class="message welcome"><span>Press Ctrl+Enter to execute query</span></div><div class="message history collapsed hide" targetdb="" targettable=""><div class="action_content"><span class="action collapse">Collapse</span> <span class="action expand">Expand</span> <span class="action requery">Requery</span> <span class="action edit">Edit</span> <span class="action explain">Explain</span> <span class="action profiling">Profiling</span> <span class="action bookmark">Bookmark</span> <span class="text failed">Query failed</span> <span class="text targetdb">Database: <span></span></span> <span class="text query_time">Queried time: <span>During current session</span></span> </div><span class="query">CREATE USER 'lammas123'@'localhost' IDENTIFIED BY '***';GRANT ALL PRIVILEGES ON *.* TO 'lammas123'@'localhost' IDENTIFIED BY '***' REQUIRE NONE WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;GRANT ALL PRIVILEGES ON `testlink`.* TO 'lammas123'@'localhost';</span></div><div class="message history collapsed hide select" targetdb="filmibaas" targettable="products"><div class="action_content"><span class="action collapse">Collapse</span> <span class="action expand">Expand</span> <span class="action requery">Requery</span> <span class="action edit">Edit</span> <span class="action explain">Explain</span> <span class="action profiling">Profiling</span> <span class="action bookmark">Bookmark</span> <span class="text failed">Query failed</span> <span class="text targetdb">Database: <span>filmibaas</span></span> <span class="text query_time">Queried time: <span>During current session</span></span> </div><span class="query">SELECT * FROM `products`</span></div></div><div class="query_input"><span class="console_query_input"></span></div></div><div class="mid_layer"></div><div class="card" id="pma_bookmarks"><div class="toolbar"><div class="switch_button"><span>Bookmarks</span></div><div class="button refresh"><span>Refresh</span></div><div class="button add"><span>Add</span></div></div><div class="content bookmark"><div class="message welcome"><span>No bookmarks</span></div></div><div class="mid_layer"></div><div class="card add"><div class="toolbar"><div class="switch_button"><span>Add bookmark</span></div></div><div class="content add_bookmark"><div class="options"><label>Label: <input type="text" name="label"></label> <label>Target database: <input type="text" name="targetdb"></label> <label><input type="checkbox" name="shared">Share this bookmark</label><button type="submit" name="submit">Ok</button></div><div class="query_input"><span class="bookmark_add_input"></span></div></div></div></div><div class="card" id="pma_console_options"><div class="toolbar"><div class="switch_button"><span>Options</span></div><div class="button default"><span>Set default</span></div></div><div class="content"><label><input type="checkbox" name="always_expand">Always expand query messages</label><br><label><input type="checkbox" name="start_history">Show query history at start</label><br><label><input type="checkbox" name="current_query">Show current browsing query</label><br></div></div><div class="templates"><div class="query_actions"><span class="action collapse">Collapse</span> <span class="action expand">Expand</span> <span class="action requery">Requery</span> <span class="action edit">Edit</span> <span class="action explain">Explain</span> <span class="action profiling">Profiling</span> <span class="action bookmark">Bookmark</span> <span class="text failed">Query failed</span> <span class="text targetdb">Database: <span></span></span> <span class="text query_time">Queried time: <span></span></span> </div></div></div></div><div id="page_content"><!DOCTYPE HTML>
-<html lang="en" dir="ltr">
-<head>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>phpMyAdmin</title>
-    <meta charset="utf-8" />
-    <style type="text/css">
-    <!--
-    html {
-        padding: 0;
-        margin: 0;
-    }
-    body  {
-        font-family: sans-serif;
-        font-size: small;
-        color: #000000;
-        background-color: #F5F5F5;
-        margin: 1em;
-    }
-    h1 {
-        margin: 0;
-        padding: 0.3em;
-        font-size: 1.4em;
-        font-weight: bold;
-        color: #ffffff;
-        background-color: #ff0000;
-    }
-    p {
-        margin: 0;
-        padding: 0.5em;
-        border: 0.1em solid red;
-        background-color: #ffeeee;
-    }
-    //-->
-    </style>
-</head>
-<body>
-<h1>phpMyAdmin - Error</h1>
-<p>export.php: Missing parameter: export_type&lt;a href="./doc/html/faq.html#faqmissingparameters" target="documentation"&gt;&lt;img src="themes/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" /&gt;&lt;/a&gt;<br /></p>
-</body>
-</html>
-</div><div id="selflink" class="print_ignore"><a href="export.php?db=&amp;table=&amp;server=1&amp;target=&amp;token=3620e8c6b58add055e1d564d96e39bf1" title="Open new phpMyAdmin window" target="_blank"><img src="themes/dot.gif" title="Open new phpMyAdmin window" alt="Open new phpMyAdmin window" class="icon ic_window-new" /></a></div><div class="clearfloat" id="pma_errors"><div class="notice"><strong>Notice</strong> in .\export.php#162<br />
-<img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice" /> Undefined index: what<br />
-<br />
-<strong>Backtrace</strong><br />
-<br />
-</div><form method="post" action="error_report.php" id="pma_report_errors_form"><input type="hidden" name="token" value="3620e8c6b58add055e1d564d96e39bf1"/><input type="hidden" name="exception_type" value="php"/><input type="hidden" name="send_error_report" value="1" /><input type="submit" value="Report" id="pma_report_errors" style="float: right; margin: 20px;"><input type="checkbox" name="always_send" id="always_send_checkbox" value="true"/><label for="always_send_checkbox">Automatically send report next time</label></form><input type="submit" value="Ignore" id="pma_ignore_errors_bottom" style="float: right; margin: 20px;"><input type="submit" value="Ignore All" id="pma_ignore_all_errors_bottom" style="float: right; margin: 20px;"></div><script data-cfasync="false" type="text/javascript">// <![CDATA[
-PMA_ajaxShowMessage(PMA_messages["phpErrorsFound"]);$("#pma_ignore_errors_popup").bind("click", function() {
-                            PMA_ignorePhpErrors()
-                        });$("#pma_ignore_all_errors_popup").bind("click",
-                            function() {
-                                PMA_ignorePhpErrors(false)
-                            });$("#pma_ignore_errors_bottom").bind("click", function() {
-                            PMA_ignorePhpErrors()
-                        });$("#pma_ignore_all_errors_bottom").bind("click",
-                            function() {
-                                PMA_ignorePhpErrors(false)
-                            });$("html, body").animate({
-                            scrollTop:$(document).height()
-                        }, "slow");
-AJAX.scriptHandler;
-$(function() {});
-// ]]></script></body></html>
+-- phpMyAdmin SQL Dump
+-- version 4.4.14
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 09, 2015 at 10:00 AM
+-- Server version: 5.6.26
+-- PHP Version: 5.6.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `filmibaas`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `author`
+--
+
+CREATE TABLE IF NOT EXISTS `author` (
+`author_id` BIGINT(20) unsigned NOT NULL,
+` NAME ` VARCHAR(255) NOT NULL,
+`begin_date_year` SMALLINT(6) DEFAULT NULL,
+`begin_date_month` SMALLINT(6) DEFAULT NULL,
+`begin_date_day` SMALLINT(6) DEFAULT NULL,
+`end_date_year` SMALLINT(6) DEFAULT NULL,
+`end_date_month` SMALLINT(6) DEFAULT NULL,
+`end_date_day` SMALLINT(6) DEFAULT NULL,
+`country_id` BIGINT(20) unsigned DEFAULT NULL,
+`gender_id` BIGINT(20) unsigned DEFAULT NULL,
+`disambiguation` VARCHAR(255) NOT NULL DEFAULT ''
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `author`
+--
+
+INSERT INTO `author` (`author_id`, ` NAME `, `begin_date_year`, `begin_date_month`, `begin_date_day`, `end_date_year`, `end_date_month`, `end_date_day`, `country_id`, `gender_id`, `disambiguation`) VALUES
+(1, 'Grigori Kromanov', 1926, 3, 8, 1984, 7, 18, 1, 1, ''),
+(2, 'Eugene Py', 1859, 5, 19, 1924, 8, 26, 5, 1, ''),
+(3, 'P.J.C. Janssen', 1824, 2, 22, 1907, 12, 23, 5, 1, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `country`
+--
+
+CREATE TABLE IF NOT EXISTS `country` (
+`country_id` BIGINT(20) unsigned NOT NULL,
+`iso` CHAR(2) DEFAULT NULL,
+` NAME ` VARCHAR(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `country`
+--
+
+INSERT INTO `country` (`country_id`, `iso`, ` NAME`) VALUES
+(1, 'EE', 'Estonia'),
+(2, 'LV', 'Latvia'),
+(3, 'LT', 'Lithuania'),
+(4, 'SU', 'Soviet Union'),
+(5, 'FR', 'Prantsusmaa'),
+(6, 'US', 'United States of America'),
+(7, 'DE', 'Germany'),
+(8, 'UK', 'United Kingdom'),
+(9, 'JP', 'Japan'),
+(10, 'AR', 'Argentina');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `film`
+--
+
+CREATE TABLE IF NOT EXISTS `film` (
+`film_id` BIGINT(20) unsigned NOT NULL,
+` NAME ` VARCHAR(255) NOT NULL,
+` YEAR ` SMALLINT(6) DEFAULT NULL,
+`country_id` BIGINT(20) unsigned DEFAULT NULL,
+`disambiguation` VARCHAR(255) NOT NULL DEFAULT ''
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `film`
+--
+
+INSERT INTO `film` (`film_id`, ` NAME `, ` YEAR`, `country_id`, `disambiguation`) VALUES
+(1, 'Viimne reliikvia', 1969, 4, ''),
+(2, 'Passage de Venus', 1874, 5, ''),
+(3, 'Carmencita', 1894, 6, ''),
+(4, 'Miss Jerry', 1894, 6, ''),
+(5, 'Los políticos', 1904, 10, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gender`
+--
+
+CREATE TABLE IF NOT EXISTS `gender` (
+`gender_id` BIGINT(20) unsigned NOT NULL,
+` NAME ` VARCHAR(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `gender`
+--
+
+INSERT INTO `gender` (`gender_id`, ` NAME `) VALUES
+(1, 'Male'),
+(2, 'Female'),
+(3, 'Other');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `genre`
+--
+
+CREATE TABLE IF NOT EXISTS `genre` (
+`genre_id` BIGINT(20) unsigned NOT NULL,
+` NAME ` VARCHAR(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `genre`
+--
+
+INSERT INTO `genre` (`genre_id`, ` NAME `) VALUES
+(1, 'Adventure'),
+(2, 'Documentary'),
+(3, 'No genre\n\n'),
+(4, 'Action'),
+(5, 'Comedy'),
+(6, 'Drama'),
+(7, 'Crime'),
+(8, 'Romance');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `link_type`
+--
+
+CREATE TABLE IF NOT EXISTS `link_type` (
+`type_id` BIGINT(20) unsigned NOT NULL,
+` NAME ` VARCHAR(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `link_type`
+--
+
+INSERT INTO `link_type` (`type_id`, ` NAME `) VALUES
+(1, 'Director');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `l_author_film`
+--
+
+CREATE TABLE IF NOT EXISTS `l_author_film` (
+`id` BIGINT(20) unsigned NOT NULL,
+`author_id` BIGINT(20) unsigned DEFAULT NULL,
+`film_id` BIGINT(20) unsigned DEFAULT NULL,
+`type_id` BIGINT(20) unsigned DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `l_author_film`
+--
+
+INSERT INTO `l_author_film` (`id`, `author_id`, `film_id`, `type_id`) VALUES
+(1, 1, 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `l_film_genre`
+--
+
+CREATE TABLE IF NOT EXISTS `l_film_genre` (
+`id` BIGINT(20) unsigned NOT NULL,
+`genre_id` BIGINT(20) unsigned DEFAULT NULL,
+`film_id` BIGINT(20) unsigned DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `l_film_genre`
+--
+
+INSERT INTO `l_film_genre` (`id`, `genre_id`, `film_id`) VALUES
+(1, 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE IF NOT EXISTS `products` (
+`films` VARCHAR(255) NOT NULL,
+`price` INT(11) NOT NULL,
+` FORMAT ` VARCHAR(255) NOT NULL,
+`copies` VARCHAR(255) NOT NULL
+) ENGINE = InnoDB DEFAULT CHARSET = latin1;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`films`, `price`, ` FORMAT`, `copies`) VALUES
+('Carmencita', 8, 'DVD', '3'),
+('Los politicos', 7, 'DVD', '3'),
+('Miss Jerry  ', 7, 'DVD', '4'),
+('Passage de venus', 5, 'DVD', '3'),
+('Viimne reliikvia    ', 10, 'DVD', '5');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `author`
+--
+ALTER TABLE `author`
+ADD UNIQUE KEY `author_id` (`author_id`),
+ADD KEY `country_id` (`country_id`),
+ADD KEY `gender_id` (`gender_id`);
+
+--
+-- Indexes for table `country`
+--
+ALTER TABLE `country`
+ADD UNIQUE KEY `country_id` (`country_id`);
+
+--
+-- Indexes for table `film`
+--
+ALTER TABLE `film`
+ADD UNIQUE KEY `film_id` (`film_id`),
+ADD KEY `country_id` (`country_id`);
+
+--
+-- Indexes for table `gender`
+--
+ALTER TABLE `gender`
+ADD UNIQUE KEY `gender_id` (`gender_id`);
+
+--
+-- Indexes for table `genre`
+--
+ALTER TABLE `genre`
+ADD UNIQUE KEY `genre_id` (`genre_id`);
+
+--
+-- Indexes for table `link_type`
+--
+ALTER TABLE `link_type`
+ADD UNIQUE KEY `type_id` (`type_id`);
+
+--
+-- Indexes for table `l_author_film`
+--
+ALTER TABLE `l_author_film`
+ADD UNIQUE KEY `id` (`id`),
+ADD KEY `author_id` (`author_id`),
+ADD KEY `film_id` (`film_id`),
+ADD KEY `type_id` (`type_id`);
+
+--
+-- Indexes for table `l_film_genre`
+--
+ALTER TABLE `l_film_genre`
+ADD UNIQUE KEY `id` (`id`),
+ADD KEY `genre_id` (`genre_id`),
+ADD KEY `film_id` (`film_id`);
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+ADD PRIMARY KEY (`films`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `author`
+--
+ALTER TABLE `author`
+MODIFY `author_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 4;
+--
+-- AUTO_INCREMENT for table `country`
+--
+ALTER TABLE `country`
+MODIFY `country_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 11;
+--
+-- AUTO_INCREMENT for table `film`
+--
+ALTER TABLE `film`
+MODIFY `film_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 6;
+--
+-- AUTO_INCREMENT for table `gender`
+--
+ALTER TABLE `gender`
+MODIFY `gender_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 4;
+--
+-- AUTO_INCREMENT for table `genre`
+--
+ALTER TABLE `genre`
+MODIFY `genre_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 9;
+--
+-- AUTO_INCREMENT for table `link_type`
+--
+ALTER TABLE `link_type`
+MODIFY `type_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
+--
+-- AUTO_INCREMENT for table `l_author_film`
+--
+ALTER TABLE `l_author_film`
+MODIFY `id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
+--
+-- AUTO_INCREMENT for table `l_film_genre`
+--
+ALTER TABLE `l_film_genre`
+MODIFY `id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `author`
+--
+ALTER TABLE `author`
+ADD CONSTRAINT `author_ibfk_1` FOREIGN KEY (`country_id`) REFERENCES `country` (`country_id`),
+ADD CONSTRAINT `author_ibfk_2` FOREIGN KEY (`gender_id`) REFERENCES `gender` (`gender_id`);
+
+--
+-- Constraints for table `film`
+--
+ALTER TABLE `film`
+ADD CONSTRAINT `film_ibfk_1` FOREIGN KEY (`country_id`) REFERENCES `country` (`country_id`);
+
+--
+-- Constraints for table `l_author_film`
+--
+ALTER TABLE `l_author_film`
+ADD CONSTRAINT `l_author_film_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `author` (`author_id`),
+ADD CONSTRAINT `l_author_film_ibfk_2` FOREIGN KEY (`film_id`) REFERENCES `film` (`film_id`),
+ADD CONSTRAINT `l_author_film_ibfk_3` FOREIGN KEY (`type_id`) REFERENCES `link_type` (`type_id`);
+
+--
+-- Constraints for table `l_film_genre`
+--
+ALTER TABLE `l_film_genre`
+ADD CONSTRAINT `l_film_genre_ibfk_1` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`genre_id`),
+ADD CONSTRAINT `l_film_genre_ibfk_2` FOREIGN KEY (`film_id`) REFERENCES `film` (`film_id`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
