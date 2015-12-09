@@ -24,7 +24,9 @@ error_reporting(E_ALL);
         <div class="col-md-4">
             <h2><?= $author['name']; ?></h2>
 
-            <p class="andmed"><?= $author['begin_date_year']; ?>/<?= $author['begin_date_month']; ?>/<?= $author['begin_date_day']; ?> - <?= $author['end_date_year']; ?>/<?= $author['end_date_month']; ?>/<?= $author['end_date_day']; ?></p>
+            <p class="andmed"><?= $author['begin_date_year']; ?>/<?= $author['begin_date_month']; ?>
+                /<?= $author['begin_date_day']; ?> - <?= $author['end_date_year']; ?>/<?= $author['end_date_month']; ?>
+                /<?= $author['end_date_day']; ?></p>
 
             <p class="andmed">Sugu: <?= $author['gender']; ?></p>
 

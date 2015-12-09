@@ -48,6 +48,7 @@ require 'controller/country.php';
             <h1>Nothing found</h1>
             <p>We couldn't find a country with this ID.</p>
         <?php endif ?>
+
     </div>
     <?php include 'static/templates/footer.php'; ?>
 </div>

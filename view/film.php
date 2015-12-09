@@ -57,6 +57,7 @@ require 'controller/film.php';
                 nisi bibendum, sollicitudin urna euismod, sagittis neque.
             </p>
         </div>
+
     </div>
     <?php include 'static/templates/footer.php'; ?>
 </div>
