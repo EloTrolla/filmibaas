@@ -21,11 +21,16 @@ require 'controller/film.php';
 
     <div class="main-content row">
         <div class="col-md-4">
+            <?php if ($_GET['id'] > 5) {
+                echo 'Filmi ei leitud';
+                return false;
+            } ?>
             <h2><?= $film['name']; ?></h2>
 
             <p class="andmed"><?= $film['year']; ?></p>
 
             <p class="andmed"><?= $film['country']; ?></p>
+
 
             <div class="entity-list">
                 <h3>Osalejad</h3>
@@ -62,7 +67,7 @@ require 'controller/film.php';
             </p>
         </div>
         <form>
-            <input class='osta' type="button" value="Osta!" onclick="window.location.href='http://www.google.com'" />
+            <input class='osta' type="button" value="Osta!" onclick="window.location.href='?page=pay'"/>
         </form>
     </div>
 </div>
