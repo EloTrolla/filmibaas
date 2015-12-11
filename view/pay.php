@@ -23,47 +23,51 @@
     }
 </style>
 <form class="andmed">
-    Eesnimi:<br>
+    *Eesnimi:<br>
     <input style="background-color:transparent" type="text" name="eesnimi" required>
     <br>
-    Perenimi:<br>
+    *Perenimi:<br>
     <input style="background-color:transparent" type="text" name="perenimi" required>
     <br>
     E-mail:<br>
-    <input style="background-color:transparent" type="text" name="e-mail" required>
+    <input style="background-color:transparent" type="text" name="e-mail">
     <br>
-    Pangakonto number:<br>
+    *Pangakonto number:<br>
     <input style="background-color:transparent" type="text" name="kontonr" required>
     <br>
-    Aadress:<br>
+    *Aadress:<br>
     <input style="background-color:transparent" type="text" name="aadress" required>
     <br>
-    Postiindeks:<br>
+    *Postiindeks:<br>
     <input style="background-color:transparent" type="text" name="postiindeks" required>
     <br>
     <br>
 
-    <p>Vali sobiv:</p>
+    <p>*Vali sobiv:</p>
 
     <form>
         <input type="checkbox" name="film" value="DVD"> DVD<br>
         <input type="checkbox" name="film" value="Blu-Ray"> Blu-Ray<br>
         <input type="checkbox" name="film" value="VHS"> VHS<br>
         <br>
-    <p>Vali pank:</p>
-    <input type="radio" name="pank" value="SEB" checked> SEB
-    <br>
-    <input type="radio" name="pank" value="Swedbank"> Swedbank
-    <br>
-    <input type="radio" name="pank" value="Nordea"> Nordea pank
-    <br>
-    <input type="radio" name="pank" value="Danske Bank"> Danske Bank
-    <br>
-    <br>
-    <input class="submit" type="submit" value="Kinnita ja maksa">
-</form>
+
+        <p>Vali pank:</p>
+        <input type="radio" name="pank" value="SEB" checked> SEB
+        <br>
+        <input type="radio" name="pank" value="Swedbank"> Swedbank
+        <br>
+        <input type="radio" name="pank" value="Nordea"> Nordea pank
+        <br>
+        <input type="radio" name="pank" value="Danske Bank"> Danske Bank
+        <br>
+        <br>
+        <input class="submit" type=button
+               onClick="location.href='http://pseudobank.esy.es/BANKLINK/?link=mWdbaZSVeT5UyfSRFRHlzLVazSLCRI5dFjoPihLxaRsJ6lALci8L44XEWIiM/'"
+               value='Kinnita ja maksa'>
+    </form>
 </body>
 </html>
+
 
 <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
     <input type="hidden" name="cmd" value="_xclick">
