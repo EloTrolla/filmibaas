@@ -12,7 +12,10 @@
 <body class="mainpage-body">
 <style>
     .andmed {
-        margin: 15px 15px 15px 15px;
+        text-align: center;
+        height: 50%;
+        padding: 15px;
+        position: relative;
     }
 
     .submit {
@@ -21,24 +24,32 @@
 </style>
 <form class="andmed">
     Eesnimi:<br>
-    <input type="text" name="eesnimi">
+    <input style="background-color:transparent" type="text" name="eesnimi" required>
     <br>
     Perenimi:<br>
-    <input type="text" name="perenimi">
+    <input style="background-color:transparent" type="text" name="perenimi" required>
     <br>
     E-mail:<br>
-    <input type="text" name="e-mail">
+    <input style="background-color:transparent" type="text" name="e-mail" required>
     <br>
     Pangakonto number:<br>
-    <input type="text" name="kontonr">
+    <input style="background-color:transparent" type="text" name="kontonr" required>
     <br>
     Aadress:<br>
-    <input type="text" name="aadress">
+    <input style="background-color:transparent" type="text" name="aadress" required>
     <br>
     Postiindeks:<br>
-    <input type="text" name="postiindeks">
+    <input style="background-color:transparent" type="text" name="postiindeks" required>
+    <br>
     <br>
 
+    <p>Vali sobiv:</p>
+
+    <form>
+        <input type="checkbox" name="film" value="DVD"> DVD<br>
+        <input type="checkbox" name="film" value="Blu-Ray"> Blu-Ray<br>
+        <input type="checkbox" name="film" value="VHS"> VHS<br>
+        <br>
     <p>Vali pank:</p>
     <input type="radio" name="pank" value="SEB" checked> SEB
     <br>

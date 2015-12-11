@@ -10,6 +10,12 @@ $film = get_first("SELECT *, film.name as name, country.name as country
                    JOIN country on film.country_id = country.country_id
                    WHERE film_id=$film_id");
 
+//Retrieve price and copies information from database
+$products = get_first("SELECT*, FORMAT as format
+                        FROM products
+                        JOIN film on film.film_id = products.film_id
+                        WHERE film.film_id = $film_id");
+
 //Retrieve all relationships for the film from database
 $relationships = get_all("SELECT link_type.name as type, author.name as author
                           FROM l_author_film

@@ -11,7 +11,7 @@ require 'controller/film.php';
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <title>Film: <?php echo $film['name']; ?></title>
 </head>
-<?php if(isset($_GET['id']) && $_GET['id'] > 5) {
+<?php if (isset($_GET['id']) && $_GET['id'] > 5) {
     echo 'Filmi ei leitud';
     return false;
 } ?>
@@ -21,10 +21,7 @@ require 'controller/film.php';
 
     <div class="main-content row">
         <div class="col-md-4">
-            <?php if ($_GET['id'] > 5) {
-                echo 'Filmi ei leitud';
-                return false;
-            } ?>
+
             <h2><?= $film['name']; ?></h2>
 
             <p class="andmed"><?= $film['year']; ?></p>
@@ -66,9 +63,11 @@ require 'controller/film.php';
                 nisi bibendum, sollicitudin urna euismod, sagittis neque.
             </p>
         </div>
-        <form>
-            <input class='osta' type="button" value="Osta!" onclick="window.location.href='?page=pay'"/>
-        </form>
+        <input class='osta' type='button' value='Osta!' onclick="window.location.href='?page=pay'"/>
+
+        <p class="ostuinfo">Saadaval:<?= $products['copies']; ?> koopiat formaatides <?= $products['FORMAT']; ?><br>
+            Hind: <?= $products['price']; ?></p>
+
     </div>
 </div>
 <?php include 'static/templates/footer.php'; ?>

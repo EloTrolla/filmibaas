@@ -242,8 +242,12 @@ html {
     overflow-x: hidden;
 }
 
-.osta {
-    float:right;
+.ostuinfo {
+    float: right;
     margin-right: 60px;
 }
 
+.osta {
+    float: right;
+    margin-right: 60px;
+}
