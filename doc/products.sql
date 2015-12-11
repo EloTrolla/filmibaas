@@ -27,17 +27,17 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `author` (
-`author_id` BIGINT(20) unsigned NOT NULL,
-` NAME ` VARCHAR(255) NOT NULL,
-`begin_date_year` SMALLINT(6) DEFAULT NULL,
-`begin_date_month` SMALLINT(6) DEFAULT NULL,
-`begin_date_day` SMALLINT(6) DEFAULT NULL,
-`end_date_year` SMALLINT(6) DEFAULT NULL,
-`end_date_month` SMALLINT(6) DEFAULT NULL,
-`end_date_day` SMALLINT(6) DEFAULT NULL,
-`country_id` BIGINT(20) unsigned DEFAULT NULL,
-`gender_id` BIGINT(20) unsigned DEFAULT NULL,
-`disambiguation` VARCHAR(255) NOT NULL DEFAULT ''
+  `author_id`        BIGINT(20) UNSIGNED NOT NULL,
+  ` NAME `           VARCHAR(255)        NOT NULL,
+  `begin_date_year`  SMALLINT(6)                  DEFAULT NULL,
+  `begin_date_month` SMALLINT(6)                  DEFAULT NULL,
+  `begin_date_day`   SMALLINT(6)                  DEFAULT NULL,
+  `end_date_year`    SMALLINT(6)                  DEFAULT NULL,
+  `end_date_month`   SMALLINT(6)                  DEFAULT NULL,
+  `end_date_day`     SMALLINT(6)                  DEFAULT NULL,
+  `country_id`       BIGINT(20) UNSIGNED          DEFAULT NULL,
+  `gender_id`        BIGINT(20) UNSIGNED          DEFAULT NULL,
+  `disambiguation`   VARCHAR(255)        NOT NULL DEFAULT ''
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
@@ -45,9 +45,9 @@ CREATE TABLE IF NOT EXISTS `author` (
 --
 
 INSERT INTO `author` (`author_id`, ` NAME `, `begin_date_year`, `begin_date_month`, `begin_date_day`, `end_date_year`, `end_date_month`, `end_date_day`, `country_id`, `gender_id`, `disambiguation`) VALUES
-(1, 'Grigori Kromanov', 1926, 3, 8, 1984, 7, 18, 1, 1, ''),
-(2, 'Eugene Py', 1859, 5, 19, 1924, 8, 26, 5, 1, ''),
-(3, 'P.J.C. Janssen', 1824, 2, 22, 1907, 12, 23, 5, 1, '');
+  (1, 'Grigori Kromanov', 1926, 3, 8, 1984, 7, 18, 1, 1, ''),
+  (2, 'Eugene Py', 1859, 5, 19, 1924, 8, 26, 5, 1, ''),
+  (3, 'P.J.C. Janssen', 1824, 2, 22, 1907, 12, 23, 5, 1, '');
 
 -- --------------------------------------------------------
 
@@ -56,9 +56,9 @@ INSERT INTO `author` (`author_id`, ` NAME `, `begin_date_year`, `begin_date_mont
 --
 
 CREATE TABLE IF NOT EXISTS `country` (
-`country_id` BIGINT(20) unsigned NOT NULL,
-`iso` CHAR(2) DEFAULT NULL,
-` NAME ` VARCHAR(255) NOT NULL
+  `country_id` BIGINT(20) UNSIGNED NOT NULL,
+  `iso`        CHAR(2) DEFAULT NULL,
+  ` NAME `     VARCHAR(255)        NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 --
@@ -66,16 +66,16 @@ CREATE TABLE IF NOT EXISTS `country` (
 --
 
 INSERT INTO `country` (`country_id`, `iso`, ` NAME`) VALUES
-(1, 'EE', 'Estonia'),
-(2, 'LV', 'Latvia'),
-(3, 'LT', 'Lithuania'),
-(4, 'SU', 'Soviet Union'),
-(5, 'FR', 'Prantsusmaa'),
-(6, 'US', 'United States of America'),
-(7, 'DE', 'Germany'),
-(8, 'UK', 'United Kingdom'),
-(9, 'JP', 'Japan'),
-(10, 'AR', 'Argentina');
+  (1, 'EE', 'Estonia'),
+  (2, 'LV', 'Latvia'),
+  (3, 'LT', 'Lithuania'),
+  (4, 'SU', 'Soviet Union'),
+  (5, 'FR', 'Prantsusmaa'),
+  (6, 'US', 'United States of America'),
+  (7, 'DE', 'Germany'),
+  (8, 'UK', 'United Kingdom'),
+  (9, 'JP', 'Japan'),
+  (10, 'AR', 'Argentina');
 
 -- --------------------------------------------------------
 
@@ -84,11 +84,11 @@ INSERT INTO `country` (`country_id`, `iso`, ` NAME`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `film` (
-`film_id` BIGINT(20) unsigned NOT NULL,
-` NAME ` VARCHAR(255) NOT NULL,
-` YEAR ` SMALLINT(6) DEFAULT NULL,
-`country_id` BIGINT(20) unsigned DEFAULT NULL,
-`disambiguation` VARCHAR(255) NOT NULL DEFAULT ''
+  `film_id`        BIGINT(20) UNSIGNED NOT NULL,
+  ` NAME `         VARCHAR(255)        NOT NULL,
+  ` YEAR `         SMALLINT(6)                  DEFAULT NULL,
+  `country_id`     BIGINT(20) UNSIGNED          DEFAULT NULL,
+  `disambiguation` VARCHAR(255)        NOT NULL DEFAULT ''
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
@@ -96,11 +96,11 @@ CREATE TABLE IF NOT EXISTS `film` (
 --
 
 INSERT INTO `film` (`film_id`, ` NAME `, ` YEAR`, `country_id`, `disambiguation`) VALUES
-(1, 'Viimne reliikvia', 1969, 4, ''),
-(2, 'Passage de Venus', 1874, 5, ''),
-(3, 'Carmencita', 1894, 6, ''),
-(4, 'Miss Jerry', 1894, 6, ''),
-(5, 'Los políticos', 1904, 10, '');
+  (1, 'Viimne reliikvia', 1969, 4, ''),
+  (2, 'Passage de Venus', 1874, 5, ''),
+  (3, 'Carmencita', 1894, 6, ''),
+  (4, 'Miss Jerry', 1894, 6, ''),
+  (5, 'Los políticos', 1904, 10, '');
 
 -- --------------------------------------------------------
 
@@ -109,8 +109,8 @@ INSERT INTO `film` (`film_id`, ` NAME `, ` YEAR`, `country_id`, `disambiguation`
 --
 
 CREATE TABLE IF NOT EXISTS `gender` (
-`gender_id` BIGINT(20) unsigned NOT NULL,
-` NAME ` VARCHAR(255) NOT NULL
+  `gender_id` BIGINT(20) UNSIGNED NOT NULL,
+  ` NAME `    VARCHAR(255)        NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
@@ -118,9 +118,9 @@ CREATE TABLE IF NOT EXISTS `gender` (
 --
 
 INSERT INTO `gender` (`gender_id`, ` NAME `) VALUES
-(1, 'Male'),
-(2, 'Female'),
-(3, 'Other');
+  (1, 'Male'),
+  (2, 'Female'),
+  (3, 'Other');
 
 -- --------------------------------------------------------
 
@@ -129,8 +129,8 @@ INSERT INTO `gender` (`gender_id`, ` NAME `) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `genre` (
-`genre_id` BIGINT(20) unsigned NOT NULL,
-` NAME ` VARCHAR(255) NOT NULL
+  `genre_id` BIGINT(20) UNSIGNED NOT NULL,
+  ` NAME `   VARCHAR(255)        NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
@@ -138,14 +138,14 @@ CREATE TABLE IF NOT EXISTS `genre` (
 --
 
 INSERT INTO `genre` (`genre_id`, ` NAME `) VALUES
-(1, 'Adventure'),
-(2, 'Documentary'),
-(3, 'No genre\n\n'),
-(4, 'Action'),
-(5, 'Comedy'),
-(6, 'Drama'),
-(7, 'Crime'),
-(8, 'Romance');
+  (1, 'Adventure'),
+  (2, 'Documentary'),
+  (3, 'No genre\n\n'),
+  (4, 'Action'),
+  (5, 'Comedy'),
+  (6, 'Drama'),
+  (7, 'Crime'),
+  (8, 'Romance');
 
 -- --------------------------------------------------------
 
@@ -154,8 +154,8 @@ INSERT INTO `genre` (`genre_id`, ` NAME `) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `link_type` (
-`type_id` BIGINT(20) unsigned NOT NULL,
-` NAME ` VARCHAR(255) NOT NULL
+  `type_id` BIGINT(20) UNSIGNED NOT NULL,
+  ` NAME `  VARCHAR(255)        NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
@@ -163,7 +163,7 @@ CREATE TABLE IF NOT EXISTS `link_type` (
 --
 
 INSERT INTO `link_type` (`type_id`, ` NAME `) VALUES
-(1, 'Director');
+  (1, 'Director');
 
 -- --------------------------------------------------------
 
@@ -172,10 +172,10 @@ INSERT INTO `link_type` (`type_id`, ` NAME `) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `l_author_film` (
-`id` BIGINT(20) unsigned NOT NULL,
-`author_id` BIGINT(20) unsigned DEFAULT NULL,
-`film_id` BIGINT(20) unsigned DEFAULT NULL,
-`type_id` BIGINT(20) unsigned DEFAULT NULL
+  `id`        BIGINT(20) UNSIGNED NOT NULL,
+  `author_id` BIGINT(20) UNSIGNED DEFAULT NULL,
+  `film_id`   BIGINT(20) UNSIGNED DEFAULT NULL,
+  `type_id`   BIGINT(20) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
@@ -183,7 +183,7 @@ CREATE TABLE IF NOT EXISTS `l_author_film` (
 --
 
 INSERT INTO `l_author_film` (`id`, `author_id`, `film_id`, `type_id`) VALUES
-(1, 1, 1, 1);
+  (1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -192,9 +192,9 @@ INSERT INTO `l_author_film` (`id`, `author_id`, `film_id`, `type_id`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `l_film_genre` (
-`id` BIGINT(20) unsigned NOT NULL,
-`genre_id` BIGINT(20) unsigned DEFAULT NULL,
-`film_id` BIGINT(20) unsigned DEFAULT NULL
+  `id`       BIGINT(20) UNSIGNED NOT NULL,
+  `genre_id` BIGINT(20) UNSIGNED DEFAULT NULL,
+  `film_id`  BIGINT(20) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
@@ -202,7 +202,7 @@ CREATE TABLE IF NOT EXISTS `l_film_genre` (
 --
 
 INSERT INTO `l_film_genre` (`id`, `genre_id`, `film_id`) VALUES
-(1, 1, 1);
+  (1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -211,22 +211,22 @@ INSERT INTO `l_film_genre` (`id`, `genre_id`, `film_id`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `products` (
-`films` VARCHAR(255) NOT NULL,
-`price` INT(11) NOT NULL,
-` FORMAT ` VARCHAR(255) NOT NULL,
-`copies` VARCHAR(255) NOT NULL
+  `films`  VARCHAR(255) NOT NULL,
+  `price`  INT(11)      NOT NULL,
+  `FORMAT` VARCHAR(255) NOT NULL,
+  `copies` VARCHAR(255) NOT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
 --
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`films`, `price`, ` FORMAT`, `copies`) VALUES
-('Carmencita', 8, 'DVD', '3'),
-('Los politicos', 7, 'DVD', '3'),
-('Miss Jerry  ', 7, 'DVD', '4'),
-('Passage de venus', 5, 'DVD', '3'),
-('Viimne reliikvia    ', 10, 'DVD', '5');
+INSERT INTO `products` (`films`, `price`, `FORMAT`, `copies`) VALUES
+  ('Carmencita', 8, 'DVD', '3'),
+  ('Los politicos', 7, 'DVD', '3'),
+  ('Miss Jerry  ', 7, 'DVD', '4'),
+  ('Passage de venus', 5, 'DVD', '3'),
+  ('Viimne reliikvia    ', 10, 'DVD', '5');
 
 --
 -- Indexes for dumped tables
