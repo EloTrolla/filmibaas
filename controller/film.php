@@ -23,15 +23,9 @@ $relationships = get_all("SELECT link_type.name as type, author.name as author
                           JOIN link_type ON link_type.type_id = l_author_film.type_id
                           WHERE film_id=$film_id");
 
-
 //Retrieve all genres for the film from database
 $genres = get_all("SELECT genre.name as genre
                    FROM l_film_genre
                    JOIN film ON film.film_id = l_film_genre.film_id
                    JOIN genre ON genre.genre_id = l_film_genre.genre_id
                    WHERE film.film_id=$film_id");
-
-
-
-
-

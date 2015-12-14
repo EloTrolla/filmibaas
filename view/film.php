@@ -11,10 +11,7 @@ require 'controller/film.php';
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <title>Film: <?php echo $film['name']; ?></title>
 </head>
-<?php if (isset($_GET['id']) && $_GET['id'] > 5) {
-    echo 'Filmi ei leitud';
-    return false;
-} ?>
+
 <body class="entitypage-body">
 <?php include 'static/templates/header.php'; ?>
 <div class="wrapper container-fluid">
@@ -22,12 +19,16 @@ require 'controller/film.php';
     <div class="main-content row">
         <div class="col-md-4">
 
+            <?php if($_GET['id'] > 5) {
+                echo 'Filmi ei leitud';
+                return false;
+            } ?>
+            
             <h2><?= $film['name']; ?></h2>
 
             <p class="andmed"><?= $film['year']; ?></p>
 
             <p class="andmed"><?= $film['country']; ?></p>
-
 
             <div class="entity-list">
                 <h3>Osalejad</h3>
