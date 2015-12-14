@@ -62,7 +62,7 @@
         <br>
         <br>
         <input class="submit" type=button
-               onClick="location.href='http://pseudobank.esy.es/BANKLINK/login.php'"
+               onClick="location.href='?page=bank'"
                value='Kinnita ja maksa'>
     </form>
 </body>
