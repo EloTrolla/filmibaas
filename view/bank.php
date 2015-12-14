@@ -1,6 +1,6 @@
 <?php
 $apikey = '3NFQG1rBJdRby444GjFBaRWRK';
-$amount = $products['price'];
+$amount = 99.89;
 $description = 'Koopa filmist';
 
 function get_banklink($apikey, $amount, $description)
@@ -25,4 +25,15 @@ function get_banklink($apikey, $amount, $description)
     return $search_results['banklink'];
 }
 
-echo get_banklink($apikey, $amount, $description);
+$link = get_banklink($apikey, $amount, $description);
+echo " <input class=\"btn\" type=\"button\" value=\"Edasi!\" onClick=\"location.href='http://pseudobank.esy.es/BANKLINK/?link=ScNWWKXyg9FBeVEyju1Pj2GIIzHPOaUGnIDjtATKJznZv2yOwAEPCmzmWhcK'\">";
+
+/*<div style='text-align: center;
+height: 50%;
+padding: 15px;
+        position: relative;
+        '> */
+?>
+<html>
+<link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
+</html>

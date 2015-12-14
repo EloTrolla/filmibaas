@@ -1,5 +1,5 @@
 <?php
-$author_id = !empty($_GET['id']) ? $_GET['id'] : 2;
+$author_id = !empty($_GET['id']) ? $_GET['id'] : 1;
 
 
 //Retrieve author data from database

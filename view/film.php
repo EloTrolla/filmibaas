@@ -19,7 +19,7 @@ require 'controller/film.php';
     <div class="main-content row">
         <div class="col-md-4">
 
-            <?php if($_GET['id'] > 5) {
+            <?php if (isset($_GET['id']) && $_GET['id'] > 5) {
                 echo 'Filmi ei leitud';
                 return false;
             } ?>

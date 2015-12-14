@@ -251,3 +251,18 @@ html {
     float: right;
     margin-right: 60px;
 }
+
+.btn {
+    font-size: 50;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 100px;
+    border: 7px solid lightskyblue;
+    border-radius: 10px;
+    padding: 0;
+    background-color: #00adee;
+    display: block;
+    margin: 0 auto;
+    margin-top: 300px;
+}
