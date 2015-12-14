@@ -1,6 +1,6 @@
 <?php
 $apikey = '3NFQG1rBJdRby444GjFBaRWRK';
-$amount = 99.89;
+$amount = $products['price'];
 $description = 'Koopa filmist';
 
 function get_banklink($apikey, $amount, $description)
