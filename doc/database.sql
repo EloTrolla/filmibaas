@@ -71,3 +71,12 @@ INSERT INTO link_type VALUES (1, 'Director');
 INSERT INTO l_author_film VALUES (1, 1, 1, 1);
 INSERT INTO l_film_genre VALUES (1, 1, 1);
 
+
+INSERT INTO `genre` (`genre_id`, `name`) VALUES
+  (2, 'Documentary'),
+  (3, 'No genre\n\n'),
+  (4, 'Action'),
+  (5, 'Comedy'),
+  (6, 'Drama'),
+  (7, 'Crime'),
+  (8, 'Romance');

@@ -11,8 +11,13 @@ require 'controller/country.php';
     <title><?php echo $data['info'] ? "Country: " . $data['info']['name'] : "Riiki ei leitud" ?></title>
 </head>
 <body>
+<?php if(isset($_GET['id']) && $_GET['id'] > 10) {
+    echo 'Riiki ei leitud';
+    return false;
+} ?>
+<?php include 'static/templates/header.php'; ?>
 <div class="wrapper container-fluid">
-    <?php include 'static/templates/header.php'; ?>
+
     <div class="main-content row">
         <?php if ($data['info']): ?>
             <h1><?= $data['info']['name'] ?></h1>
@@ -48,7 +53,9 @@ require 'controller/country.php';
             <h1>Riiki ei leitud</h1>
             <p>Sellise ID-ga riiki ei ole meil olemas.</p>
         <?php endif ?>
+
     </div>
-    <?php include 'static/templates/footer.php'; ?>
+
 </div>
+<?php include 'static/templates/footer.php'; ?>
 </body>

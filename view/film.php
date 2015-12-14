@@ -11,22 +11,24 @@ require 'controller/film.php';
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <title>Film: <?php echo $film['name']; ?></title>
 </head>
-<body class="entitypage-body">
 
+<body class="entitypage-body">
+<?php include 'static/templates/header.php'; ?>
 <div class="wrapper container-fluid">
-    <?php include 'static/templates/header.php'; ?>
+
     <div class="main-content row">
         <div class="col-md-4">
+
             <?php if($_GET['id'] > 5) {
                 echo 'Filmi ei leitud';
                 return false;
             } ?>
+            
             <h2><?= $film['name']; ?></h2>
 
             <p class="andmed"><?= $film['year']; ?></p>
 
             <p class="andmed"><?= $film['country']; ?></p>
-
 
             <div class="entity-list">
                 <h3>Osalejad</h3>
@@ -62,8 +64,13 @@ require 'controller/film.php';
                 nisi bibendum, sollicitudin urna euismod, sagittis neque.
             </p>
         </div>
+        <input class='osta' type='button' value='Osta!' onclick="window.location.href='?page=pay'"/>
+
+        <p class="ostuinfo">Saadaval:<?= $products['copies']; ?> koopiat formaatides <?= $products['FORMAT']; ?><br>
+            Hind: <?= $products['price']; ?></p>
+
     </div>
-    <?php include 'static/templates/footer.php'; ?>
 </div>
+<?php include 'static/templates/footer.php'; ?>
 </body>
 </html>

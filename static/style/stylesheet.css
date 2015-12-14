@@ -152,7 +152,7 @@ body {
 }
 
 header {
-    font-size: 36px;
+    font-size: 15px;
     text-align: center;
     height: 130px;
     background-color: ;
@@ -167,7 +167,8 @@ header img {
 footer {
     text-align: center;
     height: 30px;
-    position: absolute;
+    float: left;
+    float: right;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -203,7 +204,7 @@ footer {
 .entitypage-body {
     background-image: url("http://d1oi7t5trwfj5d.cloudfront.net/69/ab/84ce57d2474bb8091f8d9912c614/movie-theater.jpg");
     background-repeat: no-repeat;
-    background-size: 1400px 710px;
+    background-size: auto;
 }
 
 .link1 {
@@ -239,4 +240,14 @@ p {
 }
 html {
     overflow-x: hidden;
+}
+
+.ostuinfo {
+    float: right;
+    margin-right: 60px;
+}
+
+.osta {
+    float: right;
+    margin-right: 60px;
 }
