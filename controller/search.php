@@ -25,13 +25,28 @@ $db = mysqli_connect('127.0.0.1', 'root', '', 'filmibaas') or die(mysqli_error($
 mysqli_query($db, "SET NAMES 'utf8'");
 
 //otsing
-
-$film = get_all("SELECT *, film.name as name, country.name as country
+if ($_GET["searchdrop"] == 'Film')
+{
+$result = get_all("SELECT *, film.name as name, country.name as country
                    FROM film
                    JOIN country on film.country_id = country.country_id
                    WHERE film.name LIKE '%$mainsearch%'");
+}
 
+    if ($_GET["searchdrop"] == 'Autor')
+    {
+        $result = get_all("SELECT *, author.name as name, country.name as country
+                   FROM author
+                   JOIN country on author.country_id = country.country_id
+                   WHERE author.name LIKE '%$mainsearch%'");
+    }
 
+    if ($_GET["searchdrop"] == 'Riik')
+    {
+        $result = get_all("SELECT *, country.name as name
+                   FROM country
+                   WHERE country.name LIKE '%$mainsearch%'");
+    }
 //test et array prindib
-//print_r($film);
+//öprint_r($film);
 }

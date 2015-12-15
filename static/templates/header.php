@@ -3,13 +3,13 @@
 
     <div id="search">
         <div id="tfheader">
-            <form id="tfnewsearch" method="get" action="controller/search.php">
+            <form id="tfnewsearch" method="get" action="view/search.php">
                 <input type="text" class="tftextinput" name="mainsearch" size="21" maxlength="120">
                 <input type="submit" value="Otsi" class="tfbutton">
                 <select name="searchdrop" id="dropsearch">
-                    <option value="riik">Riik</option>
-                    <option value="zanr">Žanr</option>
-                    <option value="aasta">Aasta</option>
+                    <option value="Film">Pealkiri</option>
+                    <option value="Autor">Autor</option>
+                    <option value="Riik">Riik</option>
                 </select>
 
 
