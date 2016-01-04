@@ -1,3 +1,6 @@
+<?php
+require 'controller/pay.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,20 +54,13 @@
         <input type="checkbox" name="film" value="VHS"> VHS<br>
         <br>
 
-        <p>Vali pank:</p>
-        <input type="radio" name="pank" value="SEB" checked> SEB
         <br>
-        <input type="radio" name="pank" value="Swedbank"> Swedbank
-        <br>
-        <input type="radio" name="pank" value="Nordea"> Nordea pank
-        <br>
-        <input type="radio" name="pank" value="Danske Bank"> Danske Bank
-        <br>
-        <br>
-        <input class="submit" type=button
-               onClick="location.href='?page=bank'"
-               value='Kinnita ja maksa'>
-    </form>
+        <form action="" method="post">
+            <input class="submit" type="submit"
+                   value='Kinnita ja maksa'/>
+            <input type="hidden" name='page' value='bank'>
+        </form>
+
 </body>
 </html>
 

@@ -1,7 +1,7 @@
 <?php
 $apikey = '3NFQG1rBJdRby444GjFBaRWRK';
-$amount = 99.89;
-$description = 'Koopa filmist';
+$amount = 9.89;
+$description = 'Koopia filmist';
 
 function get_banklink($apikey, $amount, $description)
 {
@@ -26,14 +26,10 @@ function get_banklink($apikey, $amount, $description)
 }
 
 $link = get_banklink($apikey, $amount, $description);
-echo " <input class=\"btn\" type=\"button\" value=\"Edasi!\" onClick=\"location.href='http://pseudobank.esy.es/BANKLINK/?link=ScNWWKXyg9FBeVEyju1Pj2GIIzHPOaUGnIDjtATKJznZv2yOwAEPCmzmWhcK'\">";
 
-/*<div style='text-align: center;
-height: 50%;
-padding: 15px;
-        position: relative;
-        '> */
 ?>
-<html>
+
+
+<a href="<?= $link ?>"> <input class="btn" type="button" value="Maksa">
+</a>
 <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
-</html>

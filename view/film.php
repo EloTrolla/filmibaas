@@ -64,11 +64,12 @@ require 'controller/film.php';
                 nisi bibendum, sollicitudin urna euismod, sagittis neque.
             </p>
         </div>
-        <input class='osta' type='button' value='Osta!' onclick="window.location.href='?page=pay'"/>
-
+        <form action="" method="get">
+            <input class='osta' type='submit' name="page" value='Osta!'/>
+            <input type='hidden' name="page" value="pay"/>
+        </form>
         <p class="ostuinfo">Saadaval:<?= $products['copies']; ?> koopiat formaatides <?= $products['FORMAT']; ?><br>
             Hind: <?= $products['price']; ?></p>
-
     </div>
 </div>
 <?php include 'static/templates/footer.php'; ?>
