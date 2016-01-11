@@ -1,3 +1,4 @@
+<?php include 'static/templates/header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +11,6 @@
     <title>Filmibaas</title>
 </head>
 <body class="mainpage-body">
-
-<?php include 'static/templates/header.php'; ?>
-
-<p class="para">Vestibulum tortor quamm feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
-    quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
-    ullamcorper pharetra.</p>
-
 <div class="keskmine">
     <table class="tabel">
 

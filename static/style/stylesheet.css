@@ -46,6 +46,11 @@ body {
     display: inline-block;
 }
 
+#search {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .tftextinput{
     margin: 0;
     padding: 5px 15px;
@@ -271,4 +276,5 @@ html {
 .logo {
     width: auto;
     height: auto;
+    margin: 50px 30px 10px 10px;
 }
