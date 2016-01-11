@@ -5,7 +5,6 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
-<title>Filmibaas</title>
 <head>
     <meta charset="UTF-8">
     <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
