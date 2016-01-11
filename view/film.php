@@ -36,7 +36,6 @@ session_start();
             <p class="andmed"><?= $film['year']; ?></p>
 
             <p class="andmed"><?= $film['country']; ?></p>
-            <p class="andmed"><?= $author['name']; ?></p>
 
             <div class="entity-list">
                 <h3>Osalejad</h3>
