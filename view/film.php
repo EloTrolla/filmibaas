@@ -10,7 +10,13 @@ session_start();
     <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <title>Film: <?php echo $film['name']; ?></title>
+    <title><?php
+        if (empty($film['name'])) {
+            echo "Filmi ei leitud";
+        }
+        else if (empty($film['name'] === true))
+        {echo $film['name'];}
+        ?></title>
 </head>
 
 <body class="entitypage-body">
@@ -30,6 +36,7 @@ session_start();
             <p class="andmed"><?= $film['year']; ?></p>
 
             <p class="andmed"><?= $film['country']; ?></p>
+            <p class="andmed"><?= $author['name']; ?></p>
 
             <div class="entity-list">
                 <h3>Osalejad</h3>

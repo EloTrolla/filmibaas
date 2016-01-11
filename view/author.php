@@ -14,7 +14,13 @@ error_reporting(E_ALL);
     <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <title>Autor: <?php echo $author['name']; ?></title>
+    <title><?php
+        if (empty($author['name'])) {
+            echo "Autorit ei leitud";
+        }
+        else if (empty($author['name'] === true))
+        {echo $author['name'];}
+        ?></title>
 </head>
 
 <body class="entitypage-body">
@@ -59,7 +65,7 @@ error_reporting(E_ALL);
             </div>
         </div>
         <div class="col-md-8">
-            <img class="author-image" src="http://gulliver.kand.pri.ee/kromanov.jpg">
+            <img class="author-image" src="<?php echo $author['image']; ?>">
 
             <p id="tutvustus">
                 <wbr/>
