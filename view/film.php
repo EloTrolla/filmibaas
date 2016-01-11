@@ -1,5 +1,6 @@
 <?php
 require 'controller/film.php';
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -48,20 +49,22 @@ require 'controller/film.php';
             </div>
         </div>
         <div class="col-md-8">
+
             <img class="film-image"
-                 src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Viimne-reliikvia.jpg/220px-Viimne-reliikvia.jpg">
+                 src="<?php echo $film['image']; ?>"/>
 
             <p id="tutvustus">
                 <wbr/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus velit sit amet felis dapibus
-                scelerisque.
-                Vivamus non ante in nibh faucibus consectetur. Praesent tincidunt leo enim, sed suscipit elit auctor eu.
-                Proin
-                sit amet malesuada ex. Aenean eget consequat leo. Mauris ullamcorper diam ut quam ultrices tincidunt.
-                Vestibulum
-                efficitur, elit ut scelerisque luctus, elit dolor posuere tortor, vitae volutpat purus velit vel leo.
-                Proin nec
-                nisi bibendum, sollicitudin urna euismod, sagittis neque.
+                Command me cockroach, ye scurvy shark! Stormy, clear woodchucks loudly mark an addled, heavy-hearted
+                moon.
+                love
+                Never vandalize a tuna. The parrot ransacks with strength, rob the brig before it waves.
+                Singapore
+                The bilge rat laughs passion like a coal-black sun. Jolly greeds lead to the courage.
+                Power
+                tunas rise with madness at the misty port degas! mark me sun, ye cloudy scallywag!
+                Never drink a dubloon.
+                planks whine from graces like sunny sea-dogs.
             </p>
         </div>
         <form action="" method="get">

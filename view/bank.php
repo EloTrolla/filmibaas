@@ -1,4 +1,5 @@
 <?php
+session_start();
 $apikey = '3NFQG1rBJdRby444GjFBaRWRK';
 $amount = 9.89;
 $description = 'Koopia filmist';
@@ -6,7 +7,10 @@ $description = 'Koopia filmist';
 function get_banklink($apikey, $amount, $description)
 {
     $url = 'http://pseudobank.esy.es/API/';
-    $data = array('apikey' => $apikey, 'amount' => $amount, 'description' => $description);
+    $data = array(
+        'apikey' => $apikey,
+        'amount' => $amount,
+        'description' => $description);
 
     $options = array(
         'http' => array(
