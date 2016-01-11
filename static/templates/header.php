@@ -1,6 +1,5 @@
 <header>
-    <img src="static/img/header_logo.png" alt="">
-
+    <img class="logo" src="static/img/header_logo.png">
     <div id="search">
         <div id="tfheader">
             <form id="tfnewsearch" method="get" action="controller/search.php">
@@ -11,19 +10,9 @@
                     <option value="zanr">Žanr</option>
                     <option value="aasta">Aasta</option>
                 </select>
-
-
-                </div>
-
             </form>
-
-            <div class="tfclear"></div>
         </div>
     </div>
-
-    </form>
-
-
 </header>
 <!---
 old code
