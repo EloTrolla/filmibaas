@@ -267,3 +267,8 @@ html {
     margin: 0 auto;
     margin-top: 300px;
 }
+
+.logo {
+    width: auto;
+    height: auto;
+}

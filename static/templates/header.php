@@ -1,5 +1,5 @@
 <header>
-    <img src="static/img/header_logo.png" alt="">
+    <img class="logo" src="static/img/header_logo.svg" alt="">
 
     <div id="search">
         <div id="tfheader">
