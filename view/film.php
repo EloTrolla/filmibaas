@@ -21,6 +21,7 @@ session_start();
 
 <body class="entitypage-body">
 <?php include 'static/templates/header.php'; ?>
+
 <div class="wrapper container-fluid">
 
     <div class="main-content row">

@@ -15,7 +15,7 @@
     <table class="tabel">
 
         <tr>
-            <td><a href="?page=film"><img
+            <td><a href="http://localhost:63342/filmibaas/view/bank.php"><img
                         src="http://resizing.flixster.com/BMR2CNJPTzv4YdkiToeEP1hsKEg=/180x258/dkpu1ddg7pbsk.cloudfront.net/movie/10/93/38/10933866_ori.jpg"></a>
             </td>
             <td><a href="?page=film"><img
