@@ -15,20 +15,20 @@
     <table class="tabel">
 
         <tr>
-            <td><a href="?page=film"><img class="toot"
-                        src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Viimne-reliikvia.jpg/220px-Viimne-reliikvia.jpg"></a>
+            <td><a href="http://localhost:63342/filmibaas/view/bank.php"><img
+                        src="http://resizing.flixster.com/BMR2CNJPTzv4YdkiToeEP1hsKEg=/180x258/dkpu1ddg7pbsk.cloudfront.net/movie/10/93/38/10933866_ori.jpg"></a>
             </td>
-            <td><a href="?page=film&id=2"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Transit_de_V%C3%A9nus_Jules_Janssen_(1874).jpg"></a>
+            <td><a href="?page=film"><img
+                        src="http://resizing.flixster.com/GbDqFVUc_9VBNAnanZVQxlYD0ZM=/180x267/dkpu1ddg7pbsk.cloudfront.net/movie/11/19/12/11191276_ori.jpg"></a>
             </td>
-            <td><a href="?page=film&id=3"><img
-                        src="https://pbs.twimg.com/profile_images/3727810185/83e07d3349e9171bb286c893265e8452.jpeg"></a>
+            <td><a href="?page=film"><img
+                        src="http://resizing.flixster.com/GIFSkqggG_NnJfQKMaHSTHgLwuQ=/180x266/dkpu1ddg7pbsk.cloudfront.net/movie/11/19/05/11190503_ori.jpg"></a>
             </td>
-            <td><a href="?page=film&id=4"><img
-                        src="http://1.fwcdn.pl/po/81/19/208119/7365436.3.jpg"></a>
+            <td><a href="?page=film"><img
+                        src="http://resizing.flixster.com/X7Y3lwguNW75zZGh_fs15Ywz_R8=/180x267/dkpu1ddg7pbsk.cloudfront.net/movie/11/19/15/11191560_ori.jpg"></a>
             </td>
-            <td><a href="?page=film&id=5"><img
-                        src="http://es.globedia.com/imagenes/usuarios/noticias/46325/1336207927.jpg"></a>
+            <td><a href="?page=film"><img
+                        src="http://resizing.flixster.com/QfTxOhhmuCRT614hvygkOLVy-I4=/180x267/dkpu1ddg7pbsk.cloudfront.net/movie/11/19/07/11190713_ori.jpg"></a>
             </td>
             <td><a href="?page=film"><img
                         src="http://resizing.flixster.com/rT6Zrdsk5jerxadzoklaO75zdNo=/180x266/dkpu1ddg7pbsk.cloudfront.net/movie/11/20/23/11202355_ori.jpg"></a>

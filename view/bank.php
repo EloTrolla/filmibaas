@@ -36,4 +36,5 @@ $link = get_banklink($apikey, $amount, $description);
 
 <a href="<?= $link ?>"> <input class="btn" type="button" value="Maksa">
 </a>
+<p> <?php echo 'Summa kokku: '.$amount; ?></p>
 <link href="static/style/stylesheet.css" rel="stylesheet" type="text/css">
