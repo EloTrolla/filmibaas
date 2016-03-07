@@ -229,6 +229,8 @@ INSERT INTO `l_film_genre` (`id`, `genre_id`, `film_id`) VALUES
 -- Tabeli struktuur tabelile `products`
 --
 
+
+
 CREATE TABLE `products` (
   `films`   VARCHAR(255) NOT NULL,
   `price`   VARCHAR(15)  NOT NULL,
@@ -389,3 +391,7 @@ ADD CONSTRAINT `l_film_genre_ibfk_2` FOREIGN KEY (`film_id`) REFERENCES `film` (
 /*!40101 SET CHARACTER_SET_CLIENT = @OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS = @OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION = @OLD_COLLATION_CONNECTION */;
+
+
+ALTER TABLE author ADD image TEXT;
+
